@@ -39,7 +39,7 @@ public class NPCMove : MonoBehaviour
     	}
     	else
     	{
-    		transform.position = Vector3.MoveTowards(transform.position, new Vector3(destinationX, destinationY, 10f), speed);
+    		transform.position = Vector3.MoveTowards(transform.position, new Vector3(destinationX, destinationY, -2f), speed);
     	}
     }
 }
