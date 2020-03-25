@@ -1,0 +1,199 @@
+title: GotPhone
+tags: 
+colorID: 0
+position: 483,665
+---
+[b]ANDREW:[/b] Why is dad calling me so early this morning?
+
+[[Answer the phone.|AnswerDad]]
+===
+title: AnswerDad
+tags: 
+colorID: 0
+position: 484,882
+---
+[b]ANDREW:[/b] Hello?
+[b]DAD:[/b] Hey, Andrew! Just wanted to see how you're doing.
+[b]ANDREW:[/b] I'm good, thanks. Why didn't you just text? I don't really like phone calls.
+[b]DAD:[/b] Well, I'm driving and that's dangerous. Do you have class now?
+[b]ANDREW:[/b] Not yet, I was actually gonna head to the library to start studying.
+[b]DAD:[/b] It's only the first day, what do you need to study for?
+[b]ANDREW:[/b] Well, I have to read an essay for my philosophy class tomorrow, and I'd like to start reading for my other classes.
+[b]DAD:[/b] Andrew, I'm proud of you for being on top of your work, but you also need to take a break sometimes.
+[b]ANDREW:[/b] What do you mean?
+[b]DAD:[/b] You need to get out of your room, socialize more with people. What about seeing Botan? He's one of the few people who can get you out of the house!
+[b]ANDREW:[/b] Well, I don't know THEIR class schedule.
+[b]DAD:[/b] Right. Sorry, I forgot about that. But you understand the point, right?
+
+[[Agree to go out.|AgreeOut]]
+[[Focus on studying.|DisagreeOut]]
+===
+title: AgreeOut
+tags: 
+colorID: 0
+position: 275,1126
+---
+<<set $dadagree to true>>
+
+[b]ANDREW:[/b] Maybe you're right. I guess I can go out for maybe a half hour or something.
+[b]DAD:[/b] Andrew, it's only the first day! Have fun today, go meet up with your friends! I love Botan, but I know he-sorry, they like to go out and get a little wild. You two are like Yin and Yang; you calm them down and they get you to have fun.
+[b]ANDREW:[/b] I get what you mean.
+[b]DAD:[/b] Oh! What about Sabrina? Have you talked to her?
+[b]ANDREW:[/b] A little bit after she got out of the hospital, she's been doing okay. A bit quiet.
+[b]DAD:[/b] Well, that makes sense. It was a really bad accident, she may need time to recover. Just try to be there for her, okay?
+[b]ANDREW:[/b] Yeah, no problem.
+[b]DAD:[/b] Alright, I'm heading to my office now so I'll talk to you later, alright?
+[b]ANDREW:[/b] Okay, dad. See ya.
+[b]ANDREW:[/b] Hm...
+<<set $DEPRESSION to $DEPRESSION - 5>>
+[i]Vvvvvv![/i]
+[b]ANDREW:[/b] Speak of the Devil...
+
+[[Look at text from Botan.|TextBotan]]
+===
+title: DisagreeOut
+tags: 
+colorID: 0
+position: 690,1124
+---
+[b]ANDREW:[/b] I think I should really start studying, dad. It's only a matter of time before the work piles on.
+[b]DAD:[/b] I get it Andrew, but when I was in college I still made time to relax and see friends. How do you think I was able to meet your mother?
+[b]ANDREW:[/b] I'm not looking for a girlfriend, dad. Besides, I wouldn't have time.
+[b]DAD:[/b] That's not the point. If you only focus on work, you'll be lonely. College is about finding balance, not trying to overwork yourself.
+[b]ANDREW:[/b] Isn't college about getting a degree so I can get a job?
+[b]DAD:[/b] Yes, but-
+[b]ANDREW:[/b] And college is about being independent, so I'm going to study and do what I think is best for me.
+[b]DAD:[/b] Do what you want Andrew, I'm just trying to help.
+[b]ANDREW:[/b] Yeah.
+[b]DAD:[/b] I'm heading into the office, I'll talk to you later.
+[b]ANDREW:[/b] Okay. Bye.
+[b]ANDREW:[/b] Jeez...
+[i]Vvvvvv![/i]
+
+<<set $DEPRESSION to $DEPRESSION + 5>>
+
+[[Look at text from Botan.|TextBotan]]
+===
+title: TextBotan
+tags: 
+colorID: 0
+position: 480,1367
+---
+[b]BOTAN:[/b] ANDREW
+[b]BOTAN:[/b] ARE YOU UP
+
+[[Say yes.|YesAwake]]
+[[Say no.|NoAwake]]
+===
+title: YesAwake
+tags: 
+colorID: 0
+position: 266,1593
+---
+[b]ANDREW:[/b] Yes, I'm up. How can you be so energetic so early?
+[b]BOTAN:[/b] I dunno
+[b]BOTAN:[/b] Maybe im god
+[b]BOTAN:[/b] Anyway, enough talk about how great i am
+[b]BOTAN:[/b] What time do you have class?
+[b]ANDREW:[/b] 9AM
+[b]BOTAN:[/b] You should totally meet me at the cafe
+[b]BOTAN:[/b] Like
+[b]BOTAN:[/b] Right now
+
+<<if $DEPRESSION > 60>>
+    [[Say no.|NoBreakfastB]]
+<<else>>
+    [[Say yes.|GoBreakfastB]]
+<<endif>>
+===
+title: NoAwake
+tags: 
+colorID: 0
+position: 685,1598
+---
+[b]ANDREW:[/b] No, I'm still asleep
+[b]BOTAN:[/b] Wow your so cool
+[b]BOTAN:[/b] lmao
+[b]BOTAN:[/b] What time do you have class?
+[b]ANDREW:[/b] 9AM
+[b]BOTAN:[/b] You should totally meet me at the cafe
+[b]BOTAN:[/b] Like
+[b]BOTAN:[/b] Right now
+
+<<if $DEPRESSION > 60>>
+    [[Say no.|NoBreakfastB]]
+<<else>>
+    [[Say yes.|GoBreakfastB]]
+<<endif>>
+===
+title: GoBreakfastB
+tags: 
+colorID: 0
+position: 613,1840
+---
+[b]ANDREW:[/b] Sure, I can meet you there
+[b]BOTAN:[/b] YESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+[b]ANDREW:[/b] Take it easy lol
+[b]BOTAN:[/b] NEVER
+
+<<set $BFRIENDSHIP to $BFRIENDSHIP + 1>>
+<<set $DEPRESSION to $DEPRESSION - 5>>
+<<set $ANXIETY to $ANXIETY + 2>>
+===
+title: NoBreakfastB
+tags: 
+colorID: 0
+position: 348,1841
+---
+[b]ANDREW:[/b] I'm sorry, but I have to start studying for my classes
+[b]BOTAN:[/b] Oh my god dude
+[b]BOTAN:[/b] Classes havent even started and your already thinking about homework
+[b]BOTAN:[/b] Dont you know breakfast is the most important meal of the day?
+[b]ANDREW:[/b] Yeah, but I barely eat it
+[b]BOTAN:[/b] Dude
+[b]BOTAN:[/b] You need to get out more
+[b]BOTAN:[/b] I barely saw you last year
+[b]BOTAN:[/b] Going to the cafe for an hour wont kill you
+[b]BOTAN:[/b] You can eat allllll the foooooood you want
+
+<<set $BFRIENDSHIP to $BFRIENDSHIP - 1>>
+
+[[Go to breakfast.|GoBreakfastB2]]
+[[Stay persistent on starting work.|FinalNoBreakfast]]
+===
+title: GoBreakfastB2
+tags: 
+colorID: 0
+position: 168,2086
+---
+[b]ANDREW:[/b] Alright, fine. But I can't stay long
+[b]BOTAN:[/b] Thats fine
+[b]BOTAN:[/b] Just eat good food and spend time with your best buds
+[b]BOTAN:[/b] See you there
+
+<<set $ANXIETY to $ANXIETY + 5>>
+===
+title: FinalNoBreakfast
+tags: 
+colorID: 0
+position: 467,2087
+---
+<<set $nobreakfast to true>>
+
+[b]ANDREW:[/b] I'm sorry, but I really need to focus on my work
+[b]BOTAN:[/b] You would rather do work than spend an hour with your friends?
+[b]BOTAN:[/b] Seriously dude?
+[b]ANDREW:[/b] You know how important school is to me
+[b]BOTAN:[/b] School is important
+[b]BOTAN:[/b] But you cant dedicate your entire life to working
+[b]BOTAN:[/b] Its kind selfish
+[b]ANDREW:[/b] I'm being selfish by focusing on my future?
+[b]BOTAN:[/b] Focusing on your future isnt selfish
+[b]BOTAN:[/b] But blowing off a small hangout just to start work is pretty shitty
+[b]BOTAN:[/b] Whatever
+[b]BOTAN:[/b] Enjoy your work
+
+<<set $BFRIENDSHIP to $BFRIENDSHIP - 2>>
+<<set $ANXIETY to $ANXIETY + 5>>
+<<set $DEPRESSION to $DEPRESSION + 10>>
+===
