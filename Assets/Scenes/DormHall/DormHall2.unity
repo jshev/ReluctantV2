@@ -1070,7 +1070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5032f1646c8d4f14a83f04e5c1c43f88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: DormLobby
+  sceneName: DormLobby2
 --- !u!1 &1443041879840334848
 GameObject:
   m_ObjectHideFlags: 0
