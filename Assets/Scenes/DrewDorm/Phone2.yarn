@@ -6,7 +6,7 @@ position: -244,451
 <i>Vvvvvv!</i>
 <b>ANDREW:</b> Hm?
 
-<<Look at text from Sabrina.|TextSabrina>>
+[[Look at text from Sabrina.|TextSabrina]]
 ===
 title: TextSabrina
 tags:
@@ -21,8 +21,8 @@ position: -246,692
 <b>ANDREW:</b> I like getting a headstart
 <b>SABRINA:</b> Listen, I understand school is important to you. But you need to give yourself time to relax. You should try to make plans for dinner tonight, I know Botan would appreciate that
 
-<<Say yes.|MakeDinnerPlans>>
-<<Say no.|NoDinnerPlans>>
+[[Say yes.|MakeDinnerPlans]]
+[[Say no.|NoDinnerPlans]]
 ===
 title: MakeDinnerPlans
 tags:

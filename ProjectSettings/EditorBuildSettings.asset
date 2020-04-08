@@ -12,8 +12,14 @@ EditorBuildSettings:
     path: Assets/Scenes/DrewDorm/DrewDorm.unity
     guid: 2dad0494b47094b27aa2da95d5201a57
   - enabled: 1
-    path: Assets/Scenes/DormHall/DormHall.unity
-    guid: c2e62f28c438e454b8b102b7e1c12ce5
+    path: Assets/Scenes/DormHall/DormHall2.unity
+    guid: 36765859ffeeb423fb4b2be73a6cbf27
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/DormLobby2.unity
+    guid: 941cd53d0898d4cb6ace7123818838dc
   - enabled: 1
     path: Assets/Scenes/Battle.unity
     guid: dceb849bbe7588447b647b8f2b428c5c

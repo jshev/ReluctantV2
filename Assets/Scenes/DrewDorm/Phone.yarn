@@ -5,7 +5,7 @@ position: 483,665
 ---
 <b>ANDREW:</b> Why is dad calling me so early this morning?
 
-<<Answer the phone.|AnswerDad>>
+[[Answer the phone.|AnswerDad]]
 ===
 title: AnswerDad
 tags:
@@ -25,8 +25,8 @@ position: 484,882
 <b>ANDREW:</b> Well, I don't know THEIR class schedule.
 <b>DAD:</b> Right. Sorry, I forgot about that. But you understand the point, right?
 
-<<Agree to go out.|AgreeOut>>
-<<Focus on studying.|DisagreeOut>>
+[[Agree to go out.|AgreeOut]]
+[[Focus on studying.|DisagreeOut]]
 ===
 title: AgreeOut
 tags:
@@ -49,7 +49,7 @@ position: 275,1126
 <i>Vvvvvv!</i>
 <b>ANDREW:</b> Speak of the Devil...
 
-<<Look at text from Botan.|TextBotan>>
+[[Look at text from Botan.|TextBotan]]
 ===
 title: DisagreeOut
 tags:
@@ -72,7 +72,7 @@ position: 690,1124
 
 <<set $DEPRESSION to $DEPRESSION + 5>>
 
-<<Look at text from Botan.|TextBotan>>
+[[Look at text from Botan.|TextBotan]]
 ===
 title: TextBotan
 tags:
@@ -82,8 +82,8 @@ position: 480,1367
 <b>BOTAN:</b> ANDREW
 <b>BOTAN:</b> ARE YOU UP
 
-<<Say yes.|YesAwake>>
-<<Say no.|NoAwake>>
+[[Say yes.|YesAwake]]
+[[Say no.|NoAwake]]
 ===
 title: YesAwake
 tags:
@@ -101,9 +101,9 @@ position: 266,1593
 <b>BOTAN:</b> Right now
 
 <<if $DEPRESSION > 60>>
-    <<Say no.|NoBreakfastB>>
+    [[Say no.|NoBreakfastB]]
 <<else>>
-    <<Say yes.|GoBreakfastB>>
+    [[Say yes.|GoBreakfastB]]
 <<endif>>
 ===
 title: NoAwake
@@ -121,9 +121,9 @@ position: 685,1598
 <b>BOTAN:</b> Right now
 
 <<if $DEPRESSION > 60>>
-    <<Say no.|NoBreakfastB>>
+    [[Say no.|NoBreakfastB]]
 <<else>>
-    <<Say yes.|GoBreakfastB>>
+    [[Say yes.|GoBreakfastB]]
 <<endif>>
 ===
 title: GoBreakfastB
@@ -158,8 +158,8 @@ position: 348,1841
 
 <<set $BFRIENDSHIP to $BFRIENDSHIP - 1>>
 
-<<Go to breakfast.|GoBreakfastB2>>
-<<Stay persistent on starting work.|FinalNoBreakfast>>
+[[Go to breakfast.|GoBreakfastB2]]
+[[Stay persistent on starting work.|FinalNoBreakfast]]
 ===
 title: GoBreakfastB2
 tags:

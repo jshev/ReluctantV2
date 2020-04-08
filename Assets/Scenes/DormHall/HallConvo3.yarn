@@ -1,0 +1,16 @@
+title: Conversation3
+tags: 
+colorID: 0
+position: 596,124
+---
+<<if visited("Conversation3") is false>>
+    <b>NPC5:</b> Hey, Amber! This is Trevor! We met at the club last night?
+    <b>NPC5:</b> ...
+    <b>NPC5:</b> Wait, you're not Amber. Who the hell are you?
+    <b>NPC5:</b> ...
+    <b>NPC5:</b> Well, do you wanna go out Friday night?
+    <b>NPC5:</b> ... Hello?
+<<else>>
+    <b>NPC5:</b> Hellooo?
+<<endif>>
+===

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: eab01f7719c8945208496a30c2519550
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - HallConvo1-Conversation1-0
+  - HallConvo1-Conversation1-1
+  - HallConvo1-Conversation1-2
+  - HallConvo1-Conversation1-3
+  - HallConvo1-Conversation1-4
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

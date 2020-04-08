@@ -1,0 +1,15 @@
+title: Conversation2
+tags: 
+colorID: 0
+position: 358,126
+---
+<<if visited("Conversation2") is false>>
+    <b>NPC3:</b> Did you go to Mike's party last night?
+    <b>NPC4:</b> Nah, parties aren't really my thing.
+    <b>NPC3:</b> Really, dude? C'mon, you have to go to at least one party before you graduate!
+    <b>NPC4:</b> Are you sure? I don't remember reading that in my orientation pamphlet.
+    <b>NPC3:</b> ...This is why you don't go to parties.
+<<else>>
+    <b>NPC4:</b> That's a bit harsh!
+<<endif>>
+===

@@ -51,7 +51,9 @@ public class PlayerMove : MonoBehaviour
     	if (col.gameObject.GetComponent<NPC>() != null) {
     		GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
     		CheckForNearbyNPC ();
-    		Destroy(col.gameObject);
+			if (col.gameObject.tag == "Object") {
+				Destroy(col.gameObject);
+			}
     	}
 
     	if (col.gameObject.GetComponent<SceneSwap>() != null) {
