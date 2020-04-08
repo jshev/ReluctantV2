@@ -23,16 +23,16 @@ public class PlayerMove : MonoBehaviour
     	VelY = 0;
     	if (!pause)
     	{
-	        if (Input.GetKey(KeyCode.D)) {
+	        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
 	        	VelX +=5;
 	        }
-	        if (Input.GetKey(KeyCode.A)) {
+	        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
 	        	VelX -=5;
 	        }
-	        if (Input.GetKey(KeyCode.W)) {
+	        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) {
 	        	VelY +=5;
 	        }
-	        if (Input.GetKey(KeyCode.S)) {
+	        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) {
 	        	VelY -=5;
 	        }
 	    }
