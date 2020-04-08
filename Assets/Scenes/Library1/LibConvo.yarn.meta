@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 45665345563d24d97817b09832cf56f3
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - LibConvo-StudyGroup-0
+  - LibConvo-StudyGroup-1
+  - LibConvo-StudyGroup-2
+  - LibConvo-StudyGroup-3
+  - LibConvo-StudyGroup-4
+  - LibConvo-StudyGroup-5
+  - LibConvo-StudyGroup-6
+  - LibConvo-StudyGroup-7
+  - LibConvo-StudyGroup-8
+  - LibConvo-StudyGroup-9
+  - LibConvo-StudyGroup-10
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

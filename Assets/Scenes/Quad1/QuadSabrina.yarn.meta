@@ -1,0 +1,41 @@
+fileFormatVersion: 2
+guid: 9e9bb520a60394d399776c73a29f8fd3
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - QuadSabrina-HallSabrina-0
+  - QuadSabrina-HallSabrina-1
+  - QuadSabrina-HallSabrina-2
+  - QuadSabrina-STalking-3
+  - QuadSabrina-STalking-4
+  - QuadSabrina-STalking-5
+  - QuadSabrina-STalking-6
+  - QuadSabrina-STalking-7
+  - QuadSabrina-STalking-8
+  - QuadSabrina-STalking-9
+  - QuadSabrina-STalking-10
+  - QuadSabrina-STalking-11
+  - QuadSabrina-WalkingPast-12
+  - QuadSabrina-WalkingPast-13
+  - QuadSabrina-WalkingPast-14
+  - QuadSabrina-GoClass-15
+  - QuadSabrina-GoClass-16
+  - QuadSabrina-GoClass-17
+  - QuadSabrina-AskingSOkay-18
+  - QuadSabrina-AskingSOkay-19
+  - QuadSabrina-AskingSOkay-20
+  - QuadSabrina-AskingSOkay-21
+  - QuadSabrina-AskingSOkay-22
+  - QuadSabrina-MorningBegin-23
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []
