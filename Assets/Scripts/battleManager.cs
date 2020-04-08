@@ -1,13 +1,15 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class battleManager : MonoBehaviour
 {
+	public SceneSwap sceneMng;
 	MoveList moveList = new MoveList();
 	Combatant monster, player;
 	int userInput = -1;
     public BattleUI ui = new BattleUI();
+    bool turn = true; // true = player
 
     void Start()
     {
@@ -18,11 +20,11 @@ public class battleManager : MonoBehaviour
 
     void spawnMonster() {
     	// import monster type and stats
-    	monster = new Combatant("Demon", new int[] {1, 2}, 50);
+    	monster = new Combatant("Demon", new int[] {1, 2, 10}, 50);
     }
 
     void spawnPlayer() {
-    	player = new  Combatant("Andrew", new int[] {0,3,4,5}, 50);
+    	player = new  Combatant("Andrew", new int[] {4,5,8,7}, 50);
     	ui.PlayerMoves(player.attackList[0].name, player.attackList[1].name, player.attackList[2].name, player.attackList[3].name);
     }
 
@@ -33,9 +35,6 @@ public class battleManager : MonoBehaviour
 
     void playerTurn() {
     	player.immune = false;
-    	// Prompt player
-    	// Show buttons
-    	// Accept Input
     	ui.resetInput();
     	if (player.stunned > 0) {
     		performAttack(monster, player, moveList.moveList[6]);
@@ -47,9 +46,6 @@ public class battleManager : MonoBehaviour
     	{
     		StartCoroutine(waitForInput());
     	}
-    	//performAttack(monster,player,player.attackList[userInput]);
-    	// Let Monster turn start
-    	
     }
 
     void monsterTurn() {
@@ -63,10 +59,10 @@ public class battleManager : MonoBehaviour
     		int randomAttack = (int) Mathf.Floor(((float)monster.attackList.Length * Random.Range(0f,1f)));
     		performAttack(player, monster, monster.attackList[randomAttack]);
 		}
-		StartCoroutine(LiterallyJustWait(false));
     }
 
     void performAttack(Combatant target, Combatant user, Attack attack) {
+    	int damage = (int)(attack.damage * user.getDmgMult()) / 100;
     	switch (attack.effect) {
     		case 1:
     			// charge attack
@@ -75,32 +71,50 @@ public class battleManager : MonoBehaviour
     			break;
     		case 2:
     			user.immune = true;
-    			target.takeDmg(attack.damage);
+    			target.takeDmg(damage);
     			break;
     		case 3:
     			user.stunned = attack.secondaryValue;
-    			target.takeDmg(attack.damage);
+    			target.takeDmg(damage);
     			break;
     		case 4:
-    			target.takeDmg(attack.damage);
+    			target.takeDmg(damage);
     			user.takeDmg(attack.secondaryValue);
     			break;
     		case 5:
     			user.takeDmg(-1 * attack.secondaryValue);
-    			target.takeDmg(attack.damage);
+    			target.takeDmg(damage);
     			break;
     		case 6:
-    			target.takeDmg(attack.damage);
+    			target.takeDmg(damage);
     			target.stunned = attack.secondaryValue;
     			target.charging = 0;
     			target.storedDmg = 0;
     			break;
+    		case 7:
+    			target.takeDmg(damage);
+    			user.setDmgMult(attack.secondaryValue);
+    			break;
+    		case 8:
+    			target.takeDmg(damage);
+    			user.setDefMult(-attack.secondaryValue);
+    			break;
+    		case 9:
+    			target.takeDmg(damage);
+    			target.setDmgMult(-attack.secondaryValue);
+    			break;
+    		case 10:
+    			target.takeDmg(damage);
+    			target.setDefMult(attack.secondaryValue);
+    			break;
     		default:
-    			target.takeDmg(attack.damage);
-    			if (user.charging == 1) target.takeDmg(user.storedDmg);
+    			target.takeDmg(damage);
+    			if (user.charging == 1) target.takeDmg((int)(user.storedDmg * user.getDmgMult()) / 100);
     			break;
     	}
     	updateText(user, attack);
+    	turn = !turn;
+    	StartCoroutine(LiterallyJustWait(turn));
     }
 
     IEnumerator waitForInput() {
@@ -111,9 +125,8 @@ public class battleManager : MonoBehaviour
 			yield return null;
 		}
 		userInput = ui.input;
-		performAttack(monster,player,player.attackList[userInput]);
 		ui.hideButtons();
-		StartCoroutine(LiterallyJustWait(true));
+		performAttack(monster,player,player.attackList[userInput]);
     }
 
     void updateText(Combatant user, Attack attack)
@@ -147,19 +160,37 @@ public class battleManager : MonoBehaviour
     			}
     		}
     	}
+    	Debug.Log("work");
     	ui.printHealth(player.health, player.healthMax, monster.health, monster.healthMax);
     }
 
     IEnumerator LiterallyJustWait(bool turn) {
     	yield return new WaitForSeconds(3);
-    	if (turn) 
-    	{
-    		monsterTurn();
+
+    	if (player.health <= 0) {
+    		battleLoss();
     	}
-    	else
+    	else if (monster.health <= 0) {
+    		battleWin();
+    	}
+    	else if (turn) 
     	{
     		startRound();
     	}
+    	else
+    	{
+    		monsterTurn();
+    	}
+    }
+
+    public void battleLoss()
+    {
+    	sceneMng.SceneLoad();
+    }
+
+    public void battleWin()
+    {
+    	sceneMng.SceneLoad();
     }
 }
 
@@ -190,25 +221,34 @@ public class MoveList
 		new Attack("rest", 0, 5, 15, "recovered 15 health"),
 		// ^^^5^^^
 		new Attack("skip", 0, 0, 0, "is charging"),
+		new Attack("focus", 0, 7, 25, "will attack harder"),
+		new Attack("breathe", 0, 8, 25, "steeled their will"),
+		new Attack("dissuade", 5, 9, 25, "decreased the demon's attack"),
+		new Attack("strike fear", 3, 10, 25, "made Andrew more vulnerable")
+		// ^^^10^^^
 	};
 
 /*
 	Secondary Effect List:
-	#: Description, 	Secondary Value Description
-	0: No Effect
-	1: charge, 			number of turns
-	2: Protect, 		number of turns
-	3: recharge, 		number of turns
-	4: recoil, 			self dmg
-	5: heal, 			heal amount
-	6: stun,			number of turns
+	#: Description, 		Secondary Value Description
+	0: No Effect	
+	1: charge, 				number of turns
+	2: Protect, 			number of turns
+	3: recharge, 			number of turns
+	4: recoil, 				self dmg
+	5: heal, 				heal amount
+	6: stun,				number of turns
+	7: attack buff,			percent increase
+	8: defence buff, 		percent increase
+	9: attack debuff,		percent decrease
+	10: defence debuff,		percent decrease
 */
 }
 
 public class Combatant
 {
 	MoveList moveList = new MoveList();
-	public int health, currEffect, healthMax, stunned, charging, storedDmg;
+	public int health, currEffect, healthMax, stunned, charging, storedDmg, dmgMult, defMult;
 	public bool immune;
 	public Attack[] attackList;
 	public string name;
@@ -219,6 +259,8 @@ public class Combatant
 		healthMax = hpMax;
 		health = hpMax;
 		attackList = new Attack[moves.Length];
+		defMult = 100;
+		dmgMult = 100;
 
 		int i = 0;
 		foreach (int moveId in moves) {
@@ -230,8 +272,32 @@ public class Combatant
 	public void takeDmg(int dmg)
 	{
 		if (!immune) {
-			health -= dmg;
+			health -= (int)(dmg * defMult) / 100;
 		} 
+	}
+
+	public void setDmgMult(int change)
+	{
+		dmgMult += change;
+		if (dmgMult < 25) dmgMult = 25;
+		if (dmgMult > 200) dmgMult = 200;
+	}
+
+	public void setDefMult(int change)
+	{
+		defMult += change;
+		if (defMult < 25) defMult = 25;
+		if (defMult > 200) defMult = 200;
+	}
+
+	public int getDmgMult()
+	{
+		return dmgMult;
+	}
+
+	public void heal(int heal)
+	{
+		health += heal;
 		if (health > healthMax) health = healthMax;
 	}
 }

@@ -1656,7 +1656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fe02745504b91a4c898ce27d33166d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jsonFile: {fileID: 11500000, guid: 3f63c6c7b171e7b49a016ee25aef3c78, type: 3}
+  jsonFile: {fileID: 4900000, guid: 6e273f5568bcd8c448e63458efa2368a, type: 3}
   destinationX: 0
   destinationY: 0
   speed: 0
@@ -1720,7 +1720,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257377104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.87, y: -1.0973644, z: -1.28}
+  m_LocalPosition: {x: 9.82, y: -1.0973644, z: -1.6}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
