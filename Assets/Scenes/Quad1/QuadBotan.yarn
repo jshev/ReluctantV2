@@ -1,0 +1,74 @@
+title: Greetings
+tags: 
+colorID: 0
+position: 461,222
+---
+<b>ANDREW:</b> Yo, Botan!
+
+<<if $BFRIENDSHIP < 7>>
+    [[Get Botan's attention.|MehBotan]]
+<<else>>
+    [[Get Botan's attention.|HappyBotan]]
+<<endif>>
+===
+title: MehBotan
+tags: 
+colorID: 0
+position: 321,464
+---
+<<set $DEPRESSION to $DEPRESSION + 5>>
+
+<b>BOTAN:</b> You kept your word.
+<b>ANDREW:</b> Why wouldn't I?
+<b>BOTAN:</b> Because you seem to prefer staying in your dorm more than seeing your friends?
+<b>ANDREW:</b> I just wanted to get work done...
+<b>BOTAN:</b> Dude, it's the first day. You can't keep shutting everyone; that's how you become a hermit.
+<b>ANDREW:</b> I'm not a hermit!
+<b>BOTAN:</b> Uh huh.
+<b>BOTAN:</b> Have you seen Sabrina?
+
+[[No, why?|WhereSabrina]]
+===
+title: HappyBotan
+tags: 
+colorID: 0
+position: 598,467
+---
+<<set $DEPRESSION to $DEPRESSION - 5>>
+<<set $ANXIETY to $ANXIETY - 5>>
+
+<b>BOTAN:</b> My favorite boy! You came!
+<b>ANDREW:</b> Yeah, I did it all for you.
+<b>BOTAN:</b> I'm glad you said yes. This is a good start to the semester!
+<b>ANDREW:</b> Yeah, it sucks I haven't even gone to my first class and there's already work to do.
+<b>BOTAN:</b> Adulthood sucks, but you can't be working all day everyday.
+<b>ANDREW:</b> I guess so. I wish college wasn't so stressful.
+<b>BOTAN:</b> Well, that's why you have us! So we can get through this hell together!
+<b>ANDREW:</b> That makes me feel a bit better.
+<b>BOTAN:</b> It's what I try to do best!
+<b>BOTAN:</b> Have you seen Sabrina?
+
+[[No, why?|WhereSabrina]]
+===
+title: WhereSabrina
+tags: 
+colorID: 0
+position: 459,711
+---
+<b>BOTAN:</b> She should be here by now. I thought her dorm was closer to the cafe.
+<b>ANDREW:</b> I'll text her.
+
+[[Text Sabrina.|TextSabrina]]
+===
+title: TextSabrina
+tags: 
+colorID: 0
+position: 464,944
+---
+<b>ANDREW:</b> Hey Sabrina, are you on your way? Botan and I are in front of the cafe
+<b>SABRINA:</b> Sorry, I got caught up with something. Grab a table and ill meet you inside
+<b>ANDREW:</b> Okay
+<b>BOTAN:</b> What did she say?
+<b>ANDREW:</b> She said she's on her way. We should grab a table.
+<b>BOTAN:</b> Sounds good!
+===

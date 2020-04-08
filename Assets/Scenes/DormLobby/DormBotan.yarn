@@ -1,0 +1,70 @@
+title: RunIn
+tags:
+colorID: 0
+position: 459,246
+---
+<b>ANDREW:</b> Oh shit...
+
+<<if $apologizetobotan>>
+[[Apologize to Botan.|ApologizeB]]
+<<else>>
+[[Try to sneak past Botan.|SneakB]]
+<<endif>>
+
+===
+title: ApologizeB
+tags:
+colorID: 0
+position: 306,484
+---
+<<set $BFRIENDSHIP to $BFRIENDSHIP + 2>>
+<<set $DEPRESSION to $DEPRESSION - 5>>
+<<set $ANXIETY to $ANXIETY - 10>>
+<<set $apologybdone to true>>
+
+<b>ANDREW:</b> Hey, Botan. Can I talk to you?
+<b>BOTAN:</b> Don't you have a class to go?
+<b>ANDREW:</b> Listen, I'm sorry about before. I just like to make sure I get my shit done for classes. I didn't mean to make you upset and I'm sorry.
+<b>BOTAN:</b> ...
+<b>ANDREW:</b> Maybe we can have dinner tonight, all three of us? I don't have class.
+<b>BOTAN:</b> As long as you don't work during it.
+<b>ANDREW:</b> Trust me, I won't. I promise.
+<b>BOTAN:</b> Alright. I accept your apology. I'm sorry I blew up on you.
+<b>ANDREW:</b> It's alright, it's past us now.
+<b>BOTAN:</b> I'll see you later, dude.
+<b>ANDREW:</b> See ya.
+
+[[End of Early Morning. |MorningBegin]]
+
+===
+title: SneakB
+tags:
+colorID: 0
+position: 591,491
+---
+<<set $BFRIENDSHIP to $BFRIENDSHIP - 3>>
+<<set $DEPRESSION to $DEPRESSION + 15>>
+<<set $ANXIETY to $ANXIETY + 10>>
+
+<b>BOTAN:</b> Andrew?
+<b>ANDREW:</b> Oh! Uh, Botan!
+<b>BOTAN:</b> Are you trying to avoid me?
+<b>ANDREW:</b> Well, I know you're upset, and-
+<b>BOTAN:</b> So you avoid me?
+<b>ANDREW:</b> No, that's not it. I just have a class to get to and-
+<b>BOTAN:</b> Oh, of course. Because that's all that matters to you.
+<b>ANDREW:</b> That's not what I meant!
+<b>BOTAN:</b> You know, you can't get far in life if you don't have friends. Academics isn't worth everything.
+<b>ANDREW:</b> Botan, just-
+<b>ANDREW:</b> ...
+
+[[End of Early Morning. |MorningBegin]]
+
+===
+title: MorningBegin
+tags:
+colorID: 0
+position: 445,756
+---
+End of Early Morning...
+===

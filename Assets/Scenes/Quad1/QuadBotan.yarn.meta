@@ -1,0 +1,49 @@
+fileFormatVersion: 2
+guid: 094ce5acd810744879ae9bbfe0ea76c2
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - QuadBotan-Greetings-0
+  - QuadBotan-Greetings-1
+  - QuadBotan-Greetings-2
+  - QuadBotan-MehBotan-3
+  - QuadBotan-MehBotan-4
+  - QuadBotan-MehBotan-5
+  - QuadBotan-MehBotan-6
+  - QuadBotan-MehBotan-7
+  - QuadBotan-MehBotan-8
+  - QuadBotan-MehBotan-9
+  - QuadBotan-MehBotan-10
+  - QuadBotan-MehBotan-11
+  - QuadBotan-HappyBotan-12
+  - QuadBotan-HappyBotan-13
+  - QuadBotan-HappyBotan-14
+  - QuadBotan-HappyBotan-15
+  - QuadBotan-HappyBotan-16
+  - QuadBotan-HappyBotan-17
+  - QuadBotan-HappyBotan-18
+  - QuadBotan-HappyBotan-19
+  - QuadBotan-HappyBotan-20
+  - QuadBotan-HappyBotan-21
+  - QuadBotan-HappyBotan-22
+  - QuadBotan-WhereSabrina-23
+  - QuadBotan-WhereSabrina-24
+  - QuadBotan-WhereSabrina-25
+  - QuadBotan-TextSabrina-26
+  - QuadBotan-TextSabrina-27
+  - QuadBotan-TextSabrina-28
+  - QuadBotan-TextSabrina-29
+  - QuadBotan-TextSabrina-30
+  - QuadBotan-TextSabrina-31
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []
