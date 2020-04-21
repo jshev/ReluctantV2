@@ -330,9 +330,10 @@ GameObject:
   - component: {fileID: 157403823}
   - component: {fileID: 157403822}
   - component: {fileID: 157403821}
+  - component: {fileID: 157403825}
   m_Layer: 0
   m_Name: Botan
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -437,12 +438,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 157403820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.612051, y: -18.488108, z: 0}
+  m_LocalPosition: {x: 10.45, y: -17.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &157403825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157403820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba9287c64529b4a9c909332dcc80a50b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  otherObj: {fileID: 445352620}
 --- !u!1 &445352620
 GameObject:
   m_ObjectHideFlags: 0

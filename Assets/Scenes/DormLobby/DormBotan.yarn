@@ -30,7 +30,7 @@ position: 306,484
 
 <<else>>
 
-<<enableBox ApologizeBotan>>
+
 <<set $donetalking to true>>
 
 <<set $BFRIENDSHIP to $BFRIENDSHIP + 2>>
@@ -64,7 +64,7 @@ position: 591,491
 
 <<else>>
 
-<<enableBox SneakBotan>>
+
 <<set $donetalking to true>>
 
 <<set $BFRIENDSHIP to $BFRIENDSHIP - 3>>
