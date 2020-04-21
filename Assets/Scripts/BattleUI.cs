@@ -8,6 +8,7 @@ public class BattleUI : MonoBehaviour
 	public Text battleText, playerHPText, enemyHPText;
 	public Button atk1, atk2, atk3, atk4;
 	public int input = -1;
+	public string[,] attackText; // allText[moveNum][0 - name, 1 - description]
 
 	public void hideButtons()
 	{
@@ -25,12 +26,13 @@ public class BattleUI : MonoBehaviour
 		atk3.gameObject.SetActive(true);
 	}
 
-	public void PlayerMoves(string a1, string a2, string a3, string a4)
+	public void PlayerMoves(string[,] allText)
 	{
-		atk1.GetComponentInChildren<Text>().text = a1;
-		atk2.GetComponentInChildren<Text>().text = a2;
-		atk3.GetComponentInChildren<Text>().text = a3;
-		atk4.GetComponentInChildren<Text>().text = a4;
+		attackText = allText;
+		atk1.GetComponentInChildren<Text>().text = attackText[0,0];
+		atk2.GetComponentInChildren<Text>().text = attackText[1,0];
+		atk3.GetComponentInChildren<Text>().text = attackText[2,0];
+		atk4.GetComponentInChildren<Text>().text = attackText[3,0];
 	}
 
 	public void resetInput()
@@ -57,6 +59,29 @@ public class BattleUI : MonoBehaviour
 	{
 		input = 3;
 	}
+
+	public void hover1()
+	{
+		battleText.text = attackText[0,1];
+	}
+
+	public void hover2()
+	{
+		battleText.text = attackText[1,1];
+	}
+
+
+	public void hover3()
+	{
+		battleText.text = attackText[2,1];
+	}
+
+
+	public void hover4()
+	{
+		battleText.text = attackText[3,1];
+	}
+
 
 	public void printHealth(int playerHP, int playerMax, int enemyHP, int enemyMax)
 	{

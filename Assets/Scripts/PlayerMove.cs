@@ -44,6 +44,7 @@ public class PlayerMove : MonoBehaviour
     {
     	nonPlayable.GetComponent<NPCMove>().Activate();
     	pause = true;
+    	Destroy(col.gameObject);
     }
 
     void OnCollisionEnter2D (Collision2D col)
@@ -63,11 +64,11 @@ public class PlayerMove : MonoBehaviour
 
     public void CheckForNearbyNPC()
     {
-    	 var allParticipants = new List<NPC> (FindObjectsOfType<NPC> ());
+    	var allParticipants = new List<NPC> (FindObjectsOfType<NPC> ());    	
             var target = allParticipants.Find (delegate (NPC p) {
                 return string.IsNullOrEmpty (p.talkToNode) == false && // has a conversation node?
                 (p.transform.position - this.transform.position)// is in range?
-                .magnitude <= 2.0f;
+                .magnitude <= 5.0f;
             });
             if (target != null) {
                 // Kick off the dialogue at this node.
