@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
 using Yarn.Unity.Example;
+using UnityEngine.SceneManagement;
 
 public class SceneStart : MonoBehaviour
 {
@@ -11,9 +12,18 @@ public class SceneStart : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (!once) {
-            CheckForNearbyNPC();
-            once = true;
+        if (SceneManager.GetActiveScene().name == "DormHall2") {
+            if (PlayerPrefs.GetString("nobreakfast") == "true") {
+                if (!once) {
+                    CheckForNearbyNPC();
+                    once = true;
+                }
+            }
+        } else {
+            if (!once) {
+                CheckForNearbyNPC();
+                once = true;
+            }
         }
         
     }

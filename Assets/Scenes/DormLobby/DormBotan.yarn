@@ -3,12 +3,18 @@ tags:
 colorID: 0
 position: 459,246
 ---
+<<if $donetalking>>
+<b>BOTAN:</b> Don't talk to me.
+<<else>>
+<<enableBox Botan>>
+<<set $donetalking to true>>
 <b>ANDREW:</b> Oh shit...
 
 <<if $apologizetobotan>>
 [[Apologize to Botan.|ApologizeB]]
 <<else>>
 [[Try to sneak past Botan.|SneakB]]
+<<endif>>
 <<endif>>
 
 ===
@@ -17,6 +23,16 @@ tags:
 colorID: 0
 position: 306,484
 ---
+
+<<if $donetalking>>
+
+<b>BOTAN:</b> See you at dinner.
+
+<<else>>
+
+<<enableBox ApologizeBotan>>
+<<set $donetalking to true>>
+
 <<set $BFRIENDSHIP to $BFRIENDSHIP + 2>>
 <<set $DEPRESSION to $DEPRESSION - 5>>
 <<set $ANXIETY to $ANXIETY - 10>>
@@ -34,7 +50,7 @@ position: 306,484
 <b>BOTAN:</b> I'll see you later, dude.
 <b>ANDREW:</b> See ya.
 
-[[End of Early Morning. |MorningBegin]]
+<<endif>>
 
 ===
 title: SneakB
@@ -42,10 +58,20 @@ tags:
 colorID: 0
 position: 591,491
 ---
+<<if $donetalking>>
+
+<b>BOTAN:</b> Don't talk to me.
+
+<<else>>
+
+<<enableBox SneakBotan>>
+<<set $donetalking to true>>
+
 <<set $BFRIENDSHIP to $BFRIENDSHIP - 3>>
 <<set $DEPRESSION to $DEPRESSION + 15>>
 <<set $ANXIETY to $ANXIETY + 10>>
 
+<b>ANDREW:</b> Oh shit...
 <b>BOTAN:</b> Andrew?
 <b>ANDREW:</b> Oh! Uh, Botan!
 <b>BOTAN:</b> Are you trying to avoid me?
@@ -58,13 +84,5 @@ position: 591,491
 <b>ANDREW:</b> Botan, just-
 <b>ANDREW:</b> ...
 
-[[End of Early Morning. |MorningBegin]]
-
-===
-title: MorningBegin
-tags:
-colorID: 0
-position: 445,756
----
-End of Early Morning...
+<<endif>>
 ===
