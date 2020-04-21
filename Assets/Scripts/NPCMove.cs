@@ -6,8 +6,8 @@ public class NPCMove : MonoBehaviour
 {
 	public TextAsset jsonFile;
 	Instructions instructions;
-	public float destinationX = 0f, destinationY = 0f, speed = 0f;
-	public int instruction = 0;
+	float destinationX = 0f, destinationY = 0f, speed = 0f;
+	int instruction = 0;
 	public GameObject player;
 
 
