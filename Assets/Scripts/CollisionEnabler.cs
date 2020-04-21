@@ -19,7 +19,7 @@ public class CollisionEnabler : MonoBehaviour
 	[YarnCommand("enableBox")]
 	public void enableBoxCollider()
 	{
-		//print("Called enableBox on " + gameObject.name);
+		print("Called enableBox on " + gameObject.name);
 		otherCol.enabled = true;
 	}
 

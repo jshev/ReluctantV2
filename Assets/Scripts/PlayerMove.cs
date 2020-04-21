@@ -53,7 +53,7 @@ public class PlayerMove : MonoBehaviour
     		GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
     		CheckForNearbyNPC ();
 			if (col.gameObject.tag == "Object") {
-				Destroy(col.gameObject);
+				col.gameObject.SetActive(false);
 			}
     	}
 
@@ -68,7 +68,7 @@ public class PlayerMove : MonoBehaviour
             var target = allParticipants.Find (delegate (NPC p) {
                 return string.IsNullOrEmpty (p.talkToNode) == false && // has a conversation node?
                 (p.transform.position - this.transform.position)// is in range?
-                .magnitude <= 5.0f;
+                .magnitude <= 2.0f;
             });
             if (target != null) {
                 // Kick off the dialogue at this node.
