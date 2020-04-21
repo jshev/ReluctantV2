@@ -4,8 +4,14 @@ colorID: 0
 position: 459,246
 ---
 <<if $donetalking>>
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Botan>>
 <b>BOTAN:</b> Don't talk to me.
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
 <<else>>
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Botan>>
 <<enableBox Botan>>
 <<set $donetalking to true>>
 <b>ANDREW:</b> Oh shit...
@@ -25,11 +31,15 @@ position: 306,484
 ---
 
 <<if $donetalking>>
-
-<b>BOTAN:</b> See you at dinner.
-
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Botan>>
+<b>BOTAN:</b> See you later, dude.
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
 <<else>>
 
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Botan>>
 
 <<set $donetalking to true>>
 
@@ -50,6 +60,8 @@ position: 306,484
 <b>BOTAN:</b> I'll see you later, dude.
 <b>ANDREW:</b> See ya.
 
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
 <<endif>>
 
 ===
@@ -59,11 +71,15 @@ colorID: 0
 position: 591,491
 ---
 <<if $donetalking>>
-
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Botan>>
 <b>BOTAN:</b> Don't talk to me.
-
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
 <<else>>
 
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Botan>>
 
 <<set $donetalking to true>>
 
@@ -84,5 +100,7 @@ position: 591,491
 <b>ANDREW:</b> Botan, just-
 <b>ANDREW:</b> ...
 
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
 <<endif>>
 ===

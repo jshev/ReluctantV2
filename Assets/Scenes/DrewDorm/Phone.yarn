@@ -3,6 +3,7 @@ tags:
 colorID: 0
 position: 483,665
 ---
+<<setsprite Portrait1 Andrew>>
 <<enableBox Phone>>
 <b>ANDREW:</b> Why is dad calling me so early this morning?
 
@@ -140,6 +141,7 @@ position: 613,1840
 <<set $BFRIENDSHIP to $BFRIENDSHIP + 1>>
 <<set $DEPRESSION to $DEPRESSION - 5>>
 <<set $ANXIETY to $ANXIETY + 2>>
+<<setsprite Portrait1 None>>
 ===
 title: NoBreakfastB
 tags:
@@ -173,6 +175,7 @@ position: 168,2086
 <b>BOTAN:</b> See you there
 
 <<set $ANXIETY to $ANXIETY + 5>>
+<<setsprite Portrait1 None>>
 ===
 title: FinalNoBreakfast
 tags:
@@ -198,4 +201,5 @@ position: 467,2087
 <<set $BFRIENDSHIP to $BFRIENDSHIP - 2>>
 <<set $ANXIETY to $ANXIETY + 5>>
 <<set $DEPRESSION to $DEPRESSION + 10>>
+<<setsprite Portrait1 None>>
 ===

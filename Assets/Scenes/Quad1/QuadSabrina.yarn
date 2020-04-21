@@ -16,6 +16,20 @@ tags:
 colorID: 0
 position: 293,449
 ---
+<<if $donetalking>>
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Sabrina>>
+
+<b>SABRINA:</b> I've got to get going...
+
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
+
+<<else>>
+<<set $donetalking to true>>
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Sabrina>>
+
 <b>ANDREW:</b> Hey! Sabrina!
 <b>SABRINA:</b> Hey.
 <b>SABRINA:</b> I didn't expect the first day to turn out like this.
@@ -28,20 +42,41 @@ position: 293,449
 
 [[Head to class.|GoClass]]
 [[Ask Sabrina if she's okay.|AskingSOkay]]
+<<endif>>
 ===
 title: WalkingPast
 tags:
 colorID: 0
 position: 910,612
 ---
+<<if $donetalking>>
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Sabrina>>
+
+<b>SABRINA:</b> ...
+
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
+
+<<else>>
+<<set $donetalking to true>>
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Sabrina>>
+
 <<set $DEPRESSION to $DEPRESSION + 10>>
 <<set $ANXIETY to $ANXIETY + 5>>
+
 <b>ANDREW:</b> Hey! Sabrina!
 <b>SABRINA:</b> ...
 <b>ANDREW:</b> Sabrina?
 <b>SABRINA:</b> ...
 <b>ANDREW:</b> ...
+
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
+
 <i>End of Early Morning</i>
+<<endif>>
 
 ===
 title: GoClass
@@ -51,6 +86,10 @@ position: 141,735
 ---
 <b>ANDREW:</b> Well, I should get to class. We'll meet later?
 <b>SABRINA:</b> Okay.
+
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
+
 <i>End of Early Morning</i>
 
 ===
@@ -63,6 +102,10 @@ position: 375,738
 <b>SABRINA:</b> I'm okay. Sorry, I need to go to class.
 <b>ANDREW:</b> Oh, okay. We'll talk later?
 <b>SABRINA:</b> Okay.
+
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
+
 <i>End of Early Morning</i>
 
 ===

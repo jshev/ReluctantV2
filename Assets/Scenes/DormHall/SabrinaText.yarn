@@ -3,6 +3,7 @@ tags:
 colorID: 0
 position: 571,247
 ---
+<<setsprite Portrait1 Andrew>>
 <i>Vvvvvv!</i>
 <b>ANDREW:</b> Now Sabina is texting me...
 <b>SABRINA:</b> What happened?
@@ -29,6 +30,7 @@ position: 415,492
 <b>SABRINA:</b> Good idea
 <b>ANDREW:</b> I'll text them later I'm sorry again
 <b>SABRINA:</b> Its fine
+<<setsprite Portrait1 None>>
 ===
 title: NoDinnerPlans
 tags:
@@ -46,4 +48,5 @@ position: 684,498
 <b>SABRINA:</b> Im just trying to help
 <b>ANDREW:</b> I know, I'm not trying to be defensive
 <b>SABRINA:</b> K
+<<setsprite Portrait1 None>>
 ===

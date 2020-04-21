@@ -3,6 +3,7 @@ tags:
 colorID: 0
 position: 480,444
 ---
+<<setsprite Portrait1 Andrew>>
 <<enableBox Backpack>>
 <b>ANDREW:</b> Let me make sure I have everything.
 
@@ -17,4 +18,5 @@ position: 705,445
 <b>ANDREW:</b> Alright, I should-
 <i>Vvvvvv vvvvvv vvv-</i>
 <b>ANDREW:</b> Oh! I almost forgot my phone on my desk!
+<<setsprite Portrait1 None>>
 ===

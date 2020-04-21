@@ -4,8 +4,15 @@ colorID: 0
 position: 461,222
 ---
 <<if $donetalking>>
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Botan>>
+
 <b>BOTAN:</b> Head on in! I'll be right behind you.
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
 <<else>>
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Botan>>
 
 <<set $donetalking to true>>
 <<enableBox Botan>>
@@ -75,4 +82,7 @@ position: 464,944
 <b>BOTAN:</b> What did she say?
 <b>ANDREW:</b> She said she's on her way. We should grab a table.
 <b>BOTAN:</b> Sounds good!
+
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
 ===
