@@ -3,6 +3,7 @@ tags:
 colorID: 0
 position: 480,444
 ---
+<<enableBox Backpack>>
 <b>ANDREW:</b> Let me make sure I have everything.
 
 [[Check inside bag.|OutofInventory]]

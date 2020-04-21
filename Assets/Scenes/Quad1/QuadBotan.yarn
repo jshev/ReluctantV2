@@ -1,18 +1,22 @@
 title: Greetings
-tags: 
+tags:
 colorID: 0
 position: 461,222
 ---
-<b>ANDREW:</b> Yo, Botan!
-
-<<if $BFRIENDSHIP < 7>>
-    [[Get Botan's attention.|MehBotan]]
+<<if $donetalking>>
+<b>BOTAN:</b> Head on in! I'll be right behind you.
 <<else>>
-    [[Get Botan's attention.|HappyBotan]]
+
+<<set $donetalking to true>>
+<<enableBox Botan>>
+
+<b>ANDREW:</b> Yo, Botan!
+[[Get Botan's attention.|HappyBotan]]
 <<endif>>
+
 ===
 title: MehBotan
-tags: 
+tags:
 colorID: 0
 position: 321,464
 ---
@@ -30,7 +34,7 @@ position: 321,464
 [[No, why?|WhereSabrina]]
 ===
 title: HappyBotan
-tags: 
+tags:
 colorID: 0
 position: 598,467
 ---
@@ -51,7 +55,7 @@ position: 598,467
 [[No, why?|WhereSabrina]]
 ===
 title: WhereSabrina
-tags: 
+tags:
 colorID: 0
 position: 459,711
 ---
@@ -61,7 +65,7 @@ position: 459,711
 [[Text Sabrina.|TextSabrina]]
 ===
 title: TextSabrina
-tags: 
+tags:
 colorID: 0
 position: 464,944
 ---

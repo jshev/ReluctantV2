@@ -3,6 +3,7 @@ tags:
 colorID: 0
 position: 483,665
 ---
+<<enableBox Phone>>
 <b>ANDREW:</b> Why is dad calling me so early this morning?
 
 [[Answer the phone.|AnswerDad]]
@@ -179,6 +180,7 @@ colorID: 0
 position: 467,2087
 ---
 <<set $nobreakfast to true>>
+<<setNoBreakfast Bouncer>>
 
 <b>ANDREW:</b> I'm sorry, but I really need to focus on my work
 <b>BOTAN:</b> You would rather do work than spend an hour with your friends?

@@ -1,8 +1,10 @@
 title: LibraryStudy
-tags: 
+tags:
 colorID: 0
 position: 461,222
 ---
+
+<<enableBox Chair>>
 <b>ANDREW:</b> This looks like a good spot.
 <b>ANDREW:</b> Let me just get out my textbook.
 ...
