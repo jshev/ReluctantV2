@@ -51,7 +51,7 @@ public class PlayerMove : MonoBehaviour
     {
     	if (col.gameObject.GetComponent<NPC>() != null) {
     		GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
-    		CheckForNearbyNPC ();
+    		CheckForNearbyNPC (col.gameObject);
 			if (col.gameObject.tag == "Object") {
 				col.gameObject.SetActive(false);
 			}
@@ -62,19 +62,13 @@ public class PlayerMove : MonoBehaviour
     	}
     }
 
-    public void CheckForNearbyNPC()
+    public void CheckForNearbyNPC(GameObject collided)
     {
     	var allParticipants = new List<NPC> (FindObjectsOfType<NPC> ());    	
-            var target = allParticipants.Find (delegate (NPC p) {
-                return string.IsNullOrEmpty (p.talkToNode) == false && // has a conversation node?
-                (p.transform.position - this.transform.position)// is in range?
-                .magnitude <= 2.0f;
-            });
-            if (target != null) {
-                // Kick off the dialogue at this node.
-                FindObjectOfType<DialogueRunner> ().StartDialogue (target.talkToNode);
-            }
-
-
+        var target = collided.GetComponent<NPC>();
+        if (target != null) {
+            // Kick off the dialogue at this node.
+            FindObjectOfType<DialogueRunner> ().StartDialogue (target.talkToNode);
+        }
     }
 }
