@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 78d352eb55a2443718db278df18e8236
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - Chair-LibraryStudy-0
+  - Chair-LibraryStudy-1
+  - Chair-LibraryStudy-2
+  - Chair-LibraryStudy-3
+  - Chair-LibraryStudy-4
+  - Chair-LibraryStudy-5
+  - Chair-LibraryStudy-6
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 78d352eb55a2443718db278df18e8236,
+    type: 3}
+  localizations: []

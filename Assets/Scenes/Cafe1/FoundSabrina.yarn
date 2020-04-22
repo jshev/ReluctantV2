@@ -1,0 +1,36 @@
+title: GetSabrina
+tags:
+colorID: 0
+position: 441,199
+---
+<<if $shownTable>>
+
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Sabrina>>
+<b>SABRINA:</b> Coming...
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
+
+<<else>>
+<<pullOutChair Bouncer>>
+
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Sabrina>>
+
+<b>ANDREW:</b> Sabrina!
+
+<b>SABRINA:</b> Oh! Hey, Andrew. Nice to see you.
+
+<b>ANDREW:</b> I'm glad you're here! It feels like it's been forever since I've seen you.
+
+<b>SABRINA:</b> Yeah, it's been a while.
+
+<b>ANDREW:</b> Come on, I'll show you where we are.
+
+<b>SABRINA:</b> Thanks.
+
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
+<<set $shownTable to true>>
+<<endif>>
+===

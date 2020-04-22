@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 1e1c6e73009e5427095345a3810d3fe5
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - HallConvo3-Conversation3-0
+  - HallConvo3-Conversation3-1
+  - HallConvo3-Conversation3-2
+  - HallConvo3-Conversation3-3
+  - HallConvo3-Conversation3-4
+  - HallConvo3-Conversation3-5
+  - HallConvo3-Conversation3-6
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

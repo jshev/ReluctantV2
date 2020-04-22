@@ -1,0 +1,53 @@
+fileFormatVersion: 2
+guid: b099bcefb5a5a450f91d22b24e19d872
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - DormBotan-RunIn-0
+  - DormBotan-RunIn-1
+  - DormBotan-RunIn-2
+  - DormBotan-ApologizeB-3
+  - DormBotan-ApologizeB-4
+  - DormBotan-ApologizeB-5
+  - DormBotan-ApologizeB-6
+  - DormBotan-ApologizeB-7
+  - DormBotan-ApologizeB-8
+  - DormBotan-ApologizeB-9
+  - DormBotan-ApologizeB-10
+  - DormBotan-ApologizeB-11
+  - DormBotan-ApologizeB-12
+  - DormBotan-ApologizeB-13
+  - DormBotan-ApologizeB-14
+  - DormBotan-SneakB-15
+  - DormBotan-SneakB-16
+  - DormBotan-SneakB-17
+  - DormBotan-SneakB-18
+  - DormBotan-SneakB-19
+  - DormBotan-SneakB-20
+  - DormBotan-SneakB-21
+  - DormBotan-SneakB-22
+  - DormBotan-SneakB-23
+  - DormBotan-SneakB-24
+  - DormBotan-SneakB-25
+  - DormBotan-SneakB-26
+  - DormBotan-MorningBegin-27
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 'Error on line 14 at position 1:
+
+    missing COMMAND_ENDIF
+    at ''===''
+
+    ===
+
+    ^^^'
+  baseLanguage: {fileID: 7128917941130120860, guid: b099bcefb5a5a450f91d22b24e19d872,
+    type: 3}
+  localizations: []

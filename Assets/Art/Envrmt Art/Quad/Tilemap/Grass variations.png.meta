@@ -1,0 +1,631 @@
+fileFormatVersion: 2
+guid: 7ccea0d9e2071cc4e807b7f17555dfc5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5043089736167776416
+    second: Grass variations_0
+  - first:
+      213: 6515882217022936622
+    second: Grass variations_1
+  - first:
+      213: -4078003088277042672
+    second: Grass variations_2
+  - first:
+      213: -2460671448045607613
+    second: Grass variations_3
+  - first:
+      213: 6970497092034736287
+    second: Grass variations_4
+  - first:
+      213: -8489520420716252674
+    second: Grass variations_5
+  - first:
+      213: 7271042830489319872
+    second: Grass variations_6
+  - first:
+      213: 2371839340062600375
+    second: Grass variations_7
+  - first:
+      213: -7738794057070177674
+    second: Grass variations_8
+  - first:
+      213: -4212894178339817975
+    second: Grass variations_9
+  - first:
+      213: 6390718025421368291
+    second: Grass variations_10
+  - first:
+      213: 7588525043636692530
+    second: Grass variations_11
+  - first:
+      213: -7661996258763838245
+    second: Grass variations_12
+  - first:
+      213: 3592103814211759738
+    second: Grass variations_13
+  - first:
+      213: 1481775830279328809
+    second: Grass variations_14
+  - first:
+      213: 1188310382420320689
+    second: Grass variations_15
+  - first:
+      213: 4538626217191622204
+    second: Grass variations_16
+  - first:
+      213: -8142995203249126909
+    second: Grass variations_17
+  - first:
+      213: 3762021145360367662
+    second: Grass variations_18
+  - first:
+      213: 6026044091547339148
+    second: Grass variations_19
+  - first:
+      213: 5609754506338781955
+    second: Grass variations_20
+  - first:
+      213: -5782157859648520688
+    second: Grass variations_21
+  - first:
+      213: -4131938754219417156
+    second: Grass variations_22
+  - first:
+      213: -734858311898343666
+    second: Grass variations_23
+  - first:
+      213: 7245000764058848165
+    second: Grass variations_24
+  - first:
+      213: 1178032887187631913
+    second: Grass variations_25
+  - first:
+      213: -5440960975912578995
+    second: Grass variations_26
+  - first:
+      213: -4862864001795062886
+    second: Grass variations_27
+  - first:
+      213: -4085164890862069479
+    second: Grass variations_28
+  - first:
+      213: -446816187238518200
+    second: Grass variations_29
+  - first:
+      213: -2956558845788036681
+    second: Grass variations_30
+  - first:
+      213: -8543688411742006721
+    second: Grass variations_31
+  - first:
+      213: -2530784198647460821
+    second: Grass variations_32
+  - first:
+      213: -7216221058642062266
+    second: Grass variations_33
+  - first:
+      213: -7517156875048166841
+    second: Grass variations_34
+  - first:
+      213: -8537028639551998621
+    second: Grass variations_35
+  - first:
+      213: 5796832787070725208
+    second: Grass variations_36
+  - first:
+      213: 9213989790390336406
+    second: Grass variations_37
+  - first:
+      213: -84846473668579344
+    second: Grass variations_38
+  - first:
+      213: -2180960691611993301
+    second: Grass variations_39
+  - first:
+      213: -1851109478243132539
+    second: Grass variations_40
+  - first:
+      213: 5959889570480068601
+    second: Grass variations_41
+  - first:
+      213: 4292598800884086521
+    second: Grass variations_42
+  - first:
+      213: -6895554196439422186
+    second: Grass variations_43
+  - first:
+      213: 1455831676282137170
+    second: Grass variations_44
+  - first:
+      213: 8330729887818881997
+    second: Grass variations_45
+  - first:
+      213: -1296498070509119174
+    second: Grass variations_46
+  - first:
+      213: 7679239474992682418
+    second: Grass variations_47
+  - first:
+      213: 8704257045364329040
+    second: Grass variations_48
+  - first:
+      213: 454395941223047591
+    second: Grass variations_49
+  - first:
+      213: 2470577758087298658
+    second: Grass variations_50
+  - first:
+      213: -6622594664783658508
+    second: Grass variations_51
+  - first:
+      213: -2893857943363437809
+    second: Grass variations_52
+  - first:
+      213: 8633673721186367005
+    second: Grass variations_53
+  - first:
+      213: 6073125069672964969
+    second: Grass variations_54
+  - first:
+      213: -6928058033886156135
+    second: Grass variations_55
+  - first:
+      213: -3273759676940383030
+    second: Grass variations_56
+  - first:
+      213: -1573846943508147242
+    second: Grass variations_57
+  - first:
+      213: 8254562438498787504
+    second: Grass variations_58
+  - first:
+      213: -7541655904964848780
+    second: Grass variations_59
+  - first:
+      213: 1346745364234402824
+    second: Grass variations_60
+  - first:
+      213: -2136282199725437296
+    second: Grass variations_61
+  - first:
+      213: -3453820268717704620
+    second: Grass variations_62
+  - first:
+      213: -4822930268808204385
+    second: Grass variations_63
+  - first:
+      213: -7539492598628737581
+    second: Grass variations_64
+  - first:
+      213: 60505683143299295
+    second: Grass variations_65
+  - first:
+      213: 1650503599597943195
+    second: Grass variations_66
+  - first:
+      213: 2947655914353108165
+    second: Grass variations_67
+  - first:
+      213: 6147349219646651823
+    second: Grass variations_68
+  - first:
+      213: -5191006980920004927
+    second: Grass variations_69
+  - first:
+      213: 5139366619617892059
+    second: Grass variations_70
+  - first:
+      213: -5765408370556120765
+    second: Grass variations_71
+  - first:
+      213: 6919888156649710262
+    second: Grass variations_72
+  - first:
+      213: 554684985130950684
+    second: Grass variations_73
+  - first:
+      213: 8865164181032781682
+    second: Grass variations_74
+  - first:
+      213: 7044862836076752414
+    second: Grass variations_75
+  - first:
+      213: 3192934051211824935
+    second: Grass variations_76
+  - first:
+      213: -306575890231491861
+    second: Grass variations_77
+  - first:
+      213: -1272251201768245183
+    second: Grass variations_78
+  - first:
+      213: 7794813412265467957
+    second: Grass variations_79
+  - first:
+      213: 6129776329510785316
+    second: Grass variations_80
+  - first:
+      213: -4444839541497668363
+    second: Grass variations_81
+  - first:
+      213: 1309251261091677302
+    second: Grass variations_82
+  - first:
+      213: 1738165291863160398
+    second: Grass variations_83
+  - first:
+      213: -8156122975483407213
+    second: Grass variations_84
+  - first:
+      213: 1622849117983720817
+    second: Grass variations_85
+  - first:
+      213: 3855076282270721541
+    second: Grass variations_86
+  - first:
+      213: 806252705418800979
+    second: Grass variations_87
+  - first:
+      213: 2726748079589106009
+    second: Grass variations_88
+  - first:
+      213: 7783145748261697203
+    second: Grass variations_89
+  - first:
+      213: 2138372757397370667
+    second: Grass variations_90
+  - first:
+      213: -8303527046796476166
+    second: Grass variations_91
+  - first:
+      213: 7371208634601676376
+    second: Grass variations_92
+  - first:
+      213: -5017783343724665395
+    second: Grass variations_93
+  - first:
+      213: 793561909086625294
+    second: Grass variations_94
+  - first:
+      213: 7133601095105387330
+    second: Grass variations_95
+  - first:
+      213: 2642927338766463661
+    second: Grass variations_96
+  - first:
+      213: 3981135669918109383
+    second: Grass variations_97
+  - first:
+      213: 4512216407407410633
+    second: Grass variations_98
+  - first:
+      213: 455038867344006377
+    second: Grass variations_99
+  - first:
+      213: -809881964030880833
+    second: Grass variations_100
+  - first:
+      213: -5280289030285156143
+    second: Grass variations_101
+  - first:
+      213: 5642409679574181444
+    second: Grass variations_102
+  - first:
+      213: 4433895347851717230
+    second: Grass variations_103
+  - first:
+      213: 6570484397394504428
+    second: Grass variations_104
+  - first:
+      213: -7814117958159025167
+    second: Grass variations_105
+  - first:
+      213: -1231388861030980576
+    second: Grass variations_106
+  - first:
+      213: 1633451938209694795
+    second: Grass variations_107
+  - first:
+      213: 744096236401856260
+    second: Grass variations_108
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Grass variations_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6986496b9738e4692efbd63bbafa03
+      internalID: 5043089736167776416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass variations_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 294
+        width: 96
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd9b04ad58ac4d489472e04a13ee8ad
+      internalID: 6515882217022936622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass variations_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 288
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3f3c2a8f2b149498cf57f171752b15
+      internalID: -4078003088277042672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass variations_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 189
+        width: 96
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ae20ab5e94a0b449cb620fd723be2b
+      internalID: -2460671448045607613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass variations_4
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 192
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c36d7f564c84a74d87c75227b1e21a5
+      internalID: 6970497092034736287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass variations_5
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 108
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a6ea58677b35540b8add7dde7f414f
+      internalID: -8489520420716252674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass variations_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 87
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53792e1db3d5ea49bc04bd74d318e02
+      internalID: 7271042830489319872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass variations_7
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 96
+        width: 96
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23ca648d173a174d8de906fd8e7ce3b
+      internalID: 2371839340062600375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass variations_8
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 3
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0cd81eebfa58641b9ae0e803a1f386
+      internalID: -7738794057070177674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

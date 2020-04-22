@@ -1,0 +1,21 @@
+title: Conversation2
+tags: 
+colorID: 0
+position: 461,221
+---
+<<if visited("Conversation2") is false>>
+    <b>NPC3:</b> You guys busy tonight? I was thinking we do a Breaking Sibling Tournament?
+    <b>NPC4:</b> What game is that?
+    <b>NPC5:</b> It's a fighting game where you play as other characters from different games.
+    <b>NPC3:</b> And in this version, you can play as Mozill from Water Symbol: Wake Up and even Clown from Identity 5!
+    <b>NPC4:</b> This all sounds ridiculous.
+    <b>NPC3:</b> Do you have a better game?
+    <b>NPC4:</b> What about Marius Bash 10?
+    <b>NPC5:</b> If we play that game, we're no longer friends.
+    <b>NPC4:</b> Oooookay then...
+<<else>>
+    <b>NPC3:</b> What about Fatal Konflict?
+    <b>NPC4:</b> Ew.
+    <b>NPC5:</b> No.
+<<endif>>
+===

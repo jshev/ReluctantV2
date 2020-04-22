@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: a01eb806bfcb24a9b852dbf2eed77b36
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - LobbyConvo2-Conversation2-0
+  - LobbyConvo2-Conversation2-1
+  - LobbyConvo2-Conversation2-2
+  - LobbyConvo2-Conversation2-3
+  - LobbyConvo2-Conversation2-4
+  - LobbyConvo2-Conversation2-5
+  - LobbyConvo2-Conversation2-6
+  - LobbyConvo2-Conversation2-7
+  - LobbyConvo2-Conversation2-8
+  - LobbyConvo2-Conversation2-9
+  - LobbyConvo2-Conversation2-10
+  - LobbyConvo2-Conversation2-11
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

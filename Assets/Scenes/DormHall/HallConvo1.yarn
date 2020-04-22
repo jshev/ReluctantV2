@@ -1,0 +1,14 @@
+title: Conversation1
+tags: 
+colorID: 0
+position: 122,125
+---
+<<if visited("Conversation1") is false>>
+<b>NPC1:</b> Who do you have for math?
+<b>NPC2:</b> Smithing, he's got the best review on Judge The Professor. How about you?
+<b>NPC1:</b> I got stuck with Pealan.
+<b>NPC2:</b> Yikes, he has a low score. Sucks to be you!
+<<else>>
+    <b>NPC1:</b> This semester, man...
+<<endif>>
+===

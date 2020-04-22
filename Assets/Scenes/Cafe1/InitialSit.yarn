@@ -1,0 +1,182 @@
+title: Sitting
+tags:
+colorID: 0
+position: 270,-7
+---
+<<setsprite Portrait1 Andrew>>
+<<enableBox ProteinBar>>
+<<enableBox Cereal>>
+<<enableBox FruitSalad>>
+<<destroyBotan Bouncer>>
+<b>ANDREW:</b> Hm...
+
+[[Go on social media|SocialM]]
+[[Read textbook|Textbook]]
+===
+title: SocialM
+tags:
+colorID: 0
+position: 64,234
+---
+<i>Vvvvvv!</i>
+<b>ANDREW:</b> Oh, Dad...
+
+<<if $dadagree>>
+[[Read text from Dad.|DadSocial]]
+<<else>>
+[[Read text from Dad.|DadUnsocial]]
+<<endif>>
+===
+title: Textbook
+tags:
+colorID: 0
+position: 479,229
+---
+<b>ANDREW:</b> Maybe I could get some work done while we eat.
+
+...
+
+<<setsprite Portrait2 Botan>>
+<<seatBotan Bouncer>>
+
+<b>BOTAN:</b> Seriously?
+
+<b>ANDREW:</b> What?
+
+<b>BOTAN:</b> You're already doing homework?
+
+<b>ANDREW:</b> I told you I'm getting assignments already!
+
+<b>BOTAN:</b> I wanted to spend time with you, dude. You'd rather work than spend time with us?
+
+[[Apologize.|ApologyB]]
+[[Defend yourself.|Defending]]
+===
+title: DadSocial
+tags:
+colorID: 0
+position: -76,494
+---
+<b>DAD:</b> I hope I wasn't too harsh with talking to you today
+
+<b>ANDREW:</b> No, I'm actually out with Botan right now, we're waiting for Sabrina for breakfast
+
+<b>DAD:</b> Oh, that's great! I'm really proud of you, that's a big step
+
+<b>ANDREW:</b> Thanks, dad
+
+<b>DAD:</b> I'm at work now so we'll talk later. Don't forget to text mom, you know how she gets lol
+
+<b>ANDREW:</b> Okay, I'll talk to you later
+
+...
+
+<<setsprite Portrait2 Botan>>
+<<seatBotan Bouncer>>
+
+<b>BOTAN:</b> I've missed this shit. It's gonna be the freshman fifteen all over again.
+
+<b>ANDREW:</b> So dramatic.
+
+<b>BOTAN:</b> So worth it. Go get your food, I'll watch your stuff.
+
+<b>ANDREW:</b> Thanks, I'll be right back.
+
+<<set $ANXIETY to $ANXIETY - 5>>
+
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
+===
+title: DadUnsocial
+tags:
+colorID: 0
+position: 190,493
+---
+<b>DAD:</b> I hope I wasn't too harsh with talking to you today
+
+<b>ANDREW:</b> Well, I'm out now
+
+<b>DAD:</b> That's great! I'm glad you're out
+
+<b>ANDREW:</b> Why do you keep thinking I'm not social?
+
+<b>DAD:</b> Andrew, I never said that. I just think it's good for you to go out more. It'll help you feel better
+
+<b>ANDREW:</b> Feel better? I'm fine.
+
+<b>DAD:</b> Andrew, I know you've struggled with this for a while. I think it could be getting self-destructive
+
+<b>ANDREW:</b> Are you saying something's wrong with me? I'm fine!
+
+<b>DAD:</b> No, I'm not saying that. I'm just looking out for you
+
+<b>ANDREW:</b> I gotta go.
+
+<b>DAD:</b> We'll talk about this later
+
+...
+
+<<setsprite Portrait2 Botan>>
+<<seatBotan Bouncer>>
+
+<b>BOTAN:</b> Everything okay? You look kinda pissed.
+
+<b>ANDREW:</b> No, I'm okay.
+
+<b>BOTAN:</b> Oh, okay. Go get some food, I'll watch your stuff.
+
+<b>ANDREW:</b> Thanks, I'll be right back.
+
+<<set $DEPRESSION to $DEPRESSION + 5>>
+
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
+===
+title: ApologyB
+tags:
+colorID: 0
+position: 447,498
+---
+<b>ANDREW:</b> I'm sorry, I'll put it away.
+
+<b>BOTAN:</b> You need a break. School just started and you're the smartest guy I know. You're gonna be fine!
+
+<b>ANDREW:</b> Thanks, dude.
+
+<b>BOTAN:</b> Get some food... That'll help you calm down. I'll watch your stuff.
+
+<<set $DEPRESSION to $DEPRESSION - 5>>
+
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
+===
+title: Defending
+tags:
+colorID: 0
+position: 700,501
+---
+<b>ANDREW:</b> You know I take school seriously. Besides, you forced me to come here.
+
+<b>BOTAN:</b> Because you isolate yourself! How are you going to have friends if you just shut everyone out?
+
+<b>ANDREW:</b> You don't understand.
+
+<b>BOTAN:</b> You'd rather be working on homework than hanging out with friends. I get it.
+
+<b>ANDREW:</b> No! That's not it!
+
+<b>BOTAN:</b> No, you must have a lot of work to do.
+
+<b>ANDREW:</b> Botan...
+
+<b>BOTAN:</b> Go get food or head off to study. I don't care.
+
+<b>ANDREW:</b> ...
+
+<<set $BFRIENDSHIP to $BFRIENDSHIP - 2>>
+<<set $ANXIETY to $ANXIETY + 5>>
+<<set $DEPRESSION to $DEPRESSION + 10>>
+
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
+===

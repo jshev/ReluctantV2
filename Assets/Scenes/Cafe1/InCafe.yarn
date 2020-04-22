@@ -1,0 +1,35 @@
+title: InCafe
+tags:
+colorID: 0
+position: 88,-239
+---
+<<if $inside>>
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Botan>>
+
+<b>BOTAN:</b> Go save us that table! I'll be right there.
+
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
+
+<<else>>
+<<set $choiceMade to false>>
+<<set $inside to true>>
+
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Botan>>
+
+<b>BOTAN:</b> Let's see... That table to the right up ahead looks free.
+
+<b>ANDREW:</b> Works for me.
+
+<b>BOTAN:</b> I'm starving. You mind if I get food first?
+
+<b>ANDREW:</b> No problem.
+
+<b>BOTAN:</b> Awesome! Thanks!
+
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
+<<endif>>
+===

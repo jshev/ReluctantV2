@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: ed7eefda1831f4b548d2a3933543e5ec
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - SabrinaText-Start-0
+  - SabrinaText-Start-1
+  - SabrinaText-Start-2
+  - SabrinaText-Start-3
+  - SabrinaText-Start-4
+  - SabrinaText-Start-5
+  - SabrinaText-Start-6
+  - SabrinaText-Start-7
+  - SabrinaText-Start-8
+  - SabrinaText-Start-9
+  - SabrinaText-Start-10
+  - SabrinaText-MakeDinnerPlans-11
+  - SabrinaText-MakeDinnerPlans-12
+  - SabrinaText-MakeDinnerPlans-13
+  - SabrinaText-MakeDinnerPlans-14
+  - SabrinaText-NoDinnerPlans-15
+  - SabrinaText-NoDinnerPlans-16
+  - SabrinaText-NoDinnerPlans-17
+  - SabrinaText-NoDinnerPlans-18
+  - SabrinaText-NoDinnerPlans-19
+  - SabrinaText-NoDinnerPlans-20
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: ed7eefda1831f4b548d2a3933543e5ec,
+    type: 3}
+  localizations: []

@@ -1,0 +1,52 @@
+title: Start
+tags:
+colorID: 0
+position: 571,247
+---
+<<setsprite Portrait1 Andrew>>
+<i>Vvvvvv!</i>
+<b>ANDREW:</b> Now Sabina is texting me...
+<b>SABRINA:</b> What happened?
+<b>ANDREW:</b> What are you talking about?
+<b>SABRINA:</b> You and Botan
+<b>ANDREW:</b> I told Botan I need to study for classes and they freaked out
+<b>SABRINA:</b> Its only the first day...
+<b>ANDREW:</b> I like getting a headstart
+<b>SABRINA:</b> Listen, I understand school is important to you. But you need to give yourself time to relax. You should try to make plans for dinner tonight, I know Botan would appreciate that
+
+[[Say yes.|MakeDinnerPlans]]
+[[Say no.|NoDinnerPlans]]
+===
+title: MakeDinnerPlans
+tags:
+colorID: 0
+position: 415,492
+---
+<<set $apologizetobotan to true>>
+
+<<setApologizeToBotan Bouncer>>
+
+<b>ANDREW:</b> I'll try to talk to them, but I think I should give them some time to calm down
+<b>SABRINA:</b> Good idea
+<b>ANDREW:</b> I'll text them later I'm sorry again
+<b>SABRINA:</b> Its fine
+<<setsprite Portrait1 None>>
+===
+title: NoDinnerPlans
+tags:
+colorID: 0
+position: 684,498
+---
+<<set $SFRIENDSHIP to $SFRIENDSHIP - 1>>
+<<set $ANXIETY to $ANXIETY + 5>>
+<<set $DEPRESSION to $DEPRESSION + 5>>
+<<set $apologizetobotan to false>>
+
+<b>ANDREW:</b> I don't think I should. I'm pretty sure they hate me.
+<b>SABRINA:</b> I doubt that
+<b>ANDREW:</b> You know how Botan gets
+<b>SABRINA:</b> Im just trying to help
+<b>ANDREW:</b> I know, I'm not trying to be defensive
+<b>SABRINA:</b> K
+<<setsprite Portrait1 None>>
+===

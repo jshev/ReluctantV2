@@ -1,0 +1,17 @@
+title: Start
+tags:
+colorID: 0
+position: 254,446
+---
+<<setsprite Portrait1 Andrew>>
+
+<<set $BFRIENDSHIP to 8>>
+<<set $SFRIENDSHIP to 7>>
+<<set $ANXIETY to 65>>
+<<set $DEPRESSION to 65>>
+
+<b>ANDREW:</b> I need to stop registering for early classes. Why do I keep thinking I can do a 9AM?
+<b>ANDREW:</b> Oh well, can't do anything about it now. I need to grab my stuff.
+
+<<setsprite Portrait1 None>>
+===

@@ -1,0 +1,705 @@
+title: All3Table
+tags:
+colorID: 0
+position: 398,257
+---
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Botan>>
+<<setsprite Portrait3 Sabrina>>
+<<seatSabrina Bouncer>>
+<<destroySabrina Bouncer>>
+
+<b>BOTAN:</b> You found Sabrina!
+
+<b>SABRINA:</b> Aha, it's nice to see you too, Botan.
+
+<b>ANDREW:</b> You wanna get some food? We can watch your stuff for you.
+
+<b>SABRINA:</b> Eh, I'm not really hungry.
+
+<b>BOTAN:</b> Really? You've never turned down breakfast before!
+
+<b>SABRINA:</b> I don't know, I'm just not feeling it today.
+
+<b>BOTAN:</b> You should at least get something small to eat. Breakfast is the most important meal of the day, right?
+
+[[Side with Botan.|BotanSide]]
+[[Side with Sabrina.|SabrinaSide]]
+===
+title: BotanSide
+tags:
+colorID: 0
+position: 265,500
+---
+<b>ANDREW:</b> Botan's right, you should eat.
+
+<b>SABRINA:</b> Can you guys chill out? I know how to take care of myself.
+
+<b>BOTAN:</b> We're just looking out for you. Why are you getting so defensive?
+
+<b>SABRINA:</b> Whatever. I'll go.
+
+<<setsprite Portrait3 None>>
+
+...
+
+<b>BOTAN:</b> What the hell is her problem?
+
+<<set $BFRIENDSHIP to $BFRIENDSHIP + 1>>
+<<set $SFRIENDSHIP to $SFRIENDSHIP - 1>>
+
+[[Dismiss it.|Dismissing]]
+[[Question it.|Questioning]]
+===
+title: SabrinaSide
+tags:
+colorID: 0
+position: 524,505
+---
+<b>ANDREW:</b> Well, sometimes I'm not in a breakfast mood either.
+
+<b>BOTAN:</b> But breakfast is the most important meal of the day!
+
+<b>SABRINA:</b> Sorry, B. I'm just not feeling it today.
+
+<b>BOTAN:</b> Are you feeling okay?
+
+<b>SABRINA:</b> Why wouldn't I be?
+
+<<if $ANXIETY < 80>>
+[[Change the Subject.|SubjectC]]
+<<else>>
+[[Listen to Botan.|ListenB]]
+<<endif>>
+===
+title: Dismissing
+tags:
+colorID: 0
+position: -18,761
+---
+<b>ANDREW:</b> She's probably just tired.
+
+<b>BOTAN:</b> Maybe, but it doesn't give her the right to have an attitude.
+
+<b>ANDREW:</b> Give her some time, maybe once she eats she'll have more energy.
+
+<b>BOTAN:</b> I hope so.
+
+<b>ANDREW:</b> Besides, we don't have your morning energy. Most people who wake up super early are irritated.
+
+<b>BOTAN:</b> They need to get on my level.
+
+<b>ANDREW:</b> Yeah, like that'll happen any time soon.
+
+[[See What Sabrina Got.|SabrinaBack]]
+===
+title: Questioning
+tags:
+colorID: 0
+position: 226,757
+---
+<b>ANDREW:</b> Do you think something's off with Sabrina?
+<b>BOTAN:</b> Yeah, her attitude.
+<b>ANDREW:</b> Besides that. She hasn't been like herself since the summer.
+<b>BOTAN:</b> I'd be shaken up if I got in a really bad car accident, too.
+<b>ANDREW:</b> I feel like there's something she's not telling us.
+<b>BOTAN:</b> What do you mean?
+<b>ANDREW:</b> It just seems like something's bothering her, but she won't tell us.
+<b>BOTAN:</b> Why wouldn't she tell us? We tell each other everything.
+<b>ANDREW:</b> I don't know, I think something's really bothering her.
+<b>BOTAN:</b> Then maybe we should bring it up.
+
+<<if $ANXIETY < 75>>
+[[Agree.|BringUp]]
+<<else>>
+[[Disagree.|NoBring]]
+<<endif>>
+===
+title: SabrinaBack
+tags:
+colorID: 0
+position: -13,1327
+---
+<<setsprite Portrait3 Sabrina>>
+
+<b>BOTAN:</b> What did you get?
+
+<b>SABRINA:</b> Fruit salad.
+
+<b>BOTAN:</b> Am I the only one who went all out?
+
+<b>ANDREW:</b> I'm not a big breakfast eater.
+
+<b>SABRINA:</b> And I told you before I'm not hungry.
+
+<b>BOTAN:</b> Ugh, fine.
+
+<<if $confrontsabrina>>
+[[Ask Sabrina How She's Doing.|ConfrontS]]
+<<else>>
+[[Change the Subject.|SubjectC]]
+<<endif>>
+===
+title: BringUp
+tags:
+colorID: 0
+position: 129,1010
+---
+<<set $confrontsabrina to true>>
+
+<b>ANDREW:</b> I think we should.
+<b>BOTAN:</b> Let's ask her when she comes back.
+<b>ANDREW:</b> We should ease into it, it may be worse if we just ask out of the blue.
+<b>BOTAN:</b> Fair enough.
+
+[[See What Sabrina Got.|SabrinaBack]]
+===
+title: NoBring
+tags:
+colorID: 0
+position: 363,1013
+---
+<b>ANDREW:</b> Maybe we should wait a bit. It's the first day of school and she seems tired.
+<b>BOTAN:</b> Are you sure?
+<b>ANDREW:</b> We can bring it up later or tomorrow. Either way, let's make sure we talk about this.
+<b>BOTAN:</b> I agree.
+
+[[See What Sabrina Got.|SabrinaBack]]
+===
+title: ConfrontS
+tags:
+colorID: 0
+position: -130,1572
+---
+<b>ANDREW:</b> How have things been, Sabrina? I know this summer was hectic.
+
+<b>SABRINA:</b> It's been okay, I just needed my rest.
+
+<b>ANDREW:</b> How's Isabel's car?
+
+<b>SABRINA:</b> She got it fixed.
+
+<b>BOTAN:</b> I'm glad to hear she's okay. It sounded like a bad accident.
+
+<b>SABRINA:</b> Yeah, luckily we were okay. We just needed a lot of rest.
+
+<b>BOTAN:</b> Hm...
+
+<b>SABRINA:</b> What?
+
+[[Take Charge of Conversation.|AskingS]]
+[[Let Botan Talk.|BotanC]]
+===
+title: SubjectC
+tags:
+colorID: 0
+position: 123,1577
+---
+<b>ANDREW:</b> Sabrina, when's your first class?
+
+<b>SABRINA:</b> 9 AM.
+
+<b>ANDREW:</b> Same! What's your class?
+
+<b>SABRINA:</b> Painting.
+
+<b>BOTAN:</b> You're gonna kick ass.
+
+<b>SABRINA:</b> Aha, I doubt it. I'm not that good.
+
+<b>BOTAN:</b> Dude, you're the best artist I know! Remember when you made that sick poster for my graduation present?
+
+<b>ANDREW:</b> Oh yeah! The one with the three headed tiger on the mountain?
+
+<b>BOTAN:</b> Yeah! That poster is the coolest thing I own.
+
+<b>SABRINA:</b> You're way too kind, B.
+
+<b>BOTAN:</b> I'm being honest! I love that poster, I have it hanging in my dorm near my bed.
+
+<b>SABRINA:</b> Really?
+
+<b>BOTAN:</b> Yeah! It's just so powerful. It makes me feel badass.
+
+<b>SABRINA:</b> That's definitely your personality.
+
+<b>ANDREW:</b> Botan, do you have an early class, too?
+
+<b>BOTAN:</b> Nah, my classes don't start until noon.
+
+<b>SABRINA:</b> Lucky you.
+
+<b>ANDREW:</b> What class is it?
+
+<b>BOTAN:</b> Abnormal psychology.
+
+<b>ANDREW:</b> Really? You should have been in my class.
+
+<b>BOTAN:</b> When is it?
+
+<b>ANDREW:</b> It's at 9.
+
+<b>BOTAN:</b> Wayyyy too early for me.
+
+<b>SABRINA:</b> You say that like you don't function off two hours of sleep.
+
+<b>BOTAN:</b> Yeah, but that's my me time! That's when I relax!
+
+<b>SABRINA:</b> Actually, it's kinda funny, my abnormal psych class is today too.
+
+<b>ANDREW:</b> When's yours?
+
+<b>SABRINA:</b> It's at 2:30.
+
+<b>BOTAN:</b> Andrew, why do you take such early classes?
+
+<b>ANDREW:</b> I always think I can handle it. I try to use it as a way to motivate me to get up earlier.
+
+<b>BOTAN:</b> How's that working out for ya?
+
+<b>ANDREW:</b> It's only the first day. I'm exhausted.
+
+<b>BOTAN:</b> That's why I wanted a later class for that. I can't talk about the brain this early in the morning.
+
+<b>SABRINA:</b> Same.
+
+<b>BOTAN:</b> Hey, have you guys looked at the syllabus for that class?
+
+<b>ANDREW:</b> Yeah, why?
+
+<b>BOTAN:</b> So do we learn about different disorders and stuff?
+
+<b>SABRINA:</b> Pretty much. I know for the first few weeks, we're going over brain functions and how they can have an impact on developing a mental disorder.
+
+<b>ANDREW:</b> Yeah, same for mine too.
+
+<b>BOTAN:</b> Isn't there some psychologist that talked about dreams?
+
+<b>SABRINA:</b> You're thinking of Freud.
+
+<b>BOTAN:</b> Do you think we'll go over that stuff, too?
+
+<b>ANDREW:</b> We're probably gonna talk about some of the psychologists, sure. Why do you bring that up?
+
+<b>BOTAN:</b> I had a crazy dream last night. I've been wondering if it means something.
+
+<b>SABRINA:</b> How crazy?
+
+<b>BOTAN:</b> Pretty fucking crazy.
+
+[[Elaborate.|BotanDream]]
+===
+title: AskingS
+tags:
+colorID: 0
+position: -340,1830
+---
+<b>ANDREW:</b> We just want to make sure you're okay.
+
+<b>SABRINA:</b> Why wouldn't I be?
+
+<b>BOTAN:</b> You were in a really serious car crash. It's normal to be shaken up about that.
+
+<b>SABRINA:</b> Yeah, but we're okay. I'm okay.
+
+<b>ANDREW:</b> Are you sure? You know you can talk to us if something's wrong.
+
+<b>SABRINA:</b> I know, and I don't want to talk about it.
+
+<<if $ANXIETY < 75>>
+[[Drop It.|Dropped]]
+<<else>>
+[[Be Persistent.|PersistOnS]]
+<<endif>>
+===
+title: BotanC
+tags:
+colorID: 0
+position: -40,1834
+---
+<b>BOTAN:</b> Is there anything you want to talk about?
+<b>SABRINA:</b> Not really. Why do you sound like a detective?
+<b>BOTAN:</b> We just feel like there's something you're not telling us.
+<b>SABRINA:</b> Are you guys talking about me behind my back?
+<b>ANDREW:</b> No! We just want to make sure you're okay.
+<b>SABRINA:</b> I told you I'm fine. It was a shitty summer, and now I'm over it.
+<b>BOTAN:</b> Are you sure?
+<b>SABRINA:</b> Okay, I'm tired. I need to rest before class.
+<b>ANDREW:</b> Sabrina, are you okay?
+<b>SABRINA:</b> I'm fine, leave me alone.
+<<setsprite Portrait3 None>>
+
+<b>BOTAN:</b> Jeez.
+
+<<set $SFRIENDSHIP to $SFRIENDSHIP - 2>>
+<<set $ANXIETY to $ANXIETY + 15>>
+<<set $DEPRESSION to $DEPRESSION + 5>>
+
+[[Side with Botan|BSide]]
+[[Side with Sabrina|SSide]]
+===
+title: Dropped
+tags:
+colorID: 0
+position: -523,2074
+---
+<b>ANDREW:</b> Alright, we don't have to talk about it.
+
+<b>BOTAN:</b> Really?
+
+<<if $ANXIETY < 70>>
+[[Change the Subject.|SubjectC]]
+<<else>>
+[[Diffuse the Situation.|FailDiffuseB]]
+<<endif>>
+===
+title: PersistOnS
+tags:
+colorID: 0
+position: -287,2077
+---
+<b>ANDREW:</b> Sabrina, if something's wrong, you can tell us.
+<b>SABRINA:</b> Nothing's wrong.
+<b>ANDREW:</b> Are you sure?
+<b>SABRINA:</b> Why don't you believe me?
+<b>ANDREW:</b> Why couldn't we visit you in the hospital?
+<b>SABRINA:</b> Because the doctors didn't think it would be good for me.
+<b>BOTAN:</b> That doesn't sound right...
+<b>SABRINA:</b> I'm sorry, Botan, are you a doctor?
+<b>BOTAN:</b> What the f-
+<b>ANDREW:</b> Listen, Sabrina. Since the hospital, you haven't really seemed like yourself. We just want to help you.
+<b>SABRINA:</b> Alright, fine. You really want to help me?
+<b>BOTAN & ANDREW:</b> Yes!
+<b>SABRINA:</b> Leave me alone!
+
+<<setsprite Portrait3 None>>
+
+<b>BOTAN:</b> What the hell? We're just trying to help!
+
+<<set $SFRIENDSHIP to $SFRIENDSHIP - 2>>
+<<set $ANXIETY to $ANXIETY + 15>>
+<<set $DEPRESSION to $DEPRESSION + 5>>
+
+[[Side with Botan.|BSide]]
+[[Side with Sabrina.|SSide]]
+===
+title: FailDiffuseB
+tags:
+colorID: 0
+position: -630,2338
+---
+<b>ANDREW:</b> Relax, Botan. It's not that big of a deal.
+<b>BOTAN:</b> Weren't we supposed to ask about this?
+<b>SABRINA:</b> What are you talking about?
+<b>ANDREW:</b> Well, we just wanted to check up on you. But if you're uncomfortable talking about it, we can drop it.
+<b>SABRINA:</b> Please drop it.
+<b>BOTAN:</b> Why are you being so defensive? We're just trying to help.
+<b>ANDREW:</b> Botan-
+<b>BOTAN:</b> Andrew, stop. I can handle this. Sabrina, what's going on? Why are you acting like this?
+<b>SABRINA:</b> You think there's something wrong with me?
+<b>BOTAN:</b> I didn't say that!
+<b>SABRINA:</b> Whatever. I gotta go.
+<b>ANDREW:</b> Sabrina...
+<b>SABRINA:</b> Bye.
+
+<<setsprite Portrait3 None>>
+
+<b>BOTAN:</b> What the hell is her problem?
+
+<<set $ANXIETY to $ANXIETY + 10>>
+<<set $DEPRESSION to $DEPRESSION + 5>>
+<<set $SFRIENDSHIP to $SFRIENDSHIP - 2>>
+
+[[Agree with Botan.|BSide]]
+[[Disagree with Botan.|BDisagree]]
+===
+title: BSide
+tags:
+colorID: 0
+position: -778,3030
+---
+<b>ANDREW:</b> I don't know why she won't talk to us.
+<b>BOTAN:</b> Seriously, we just want to check up on her.
+<b>ANDREW:</b> I just have this bad feeling like something's wrong.
+<b>BOTAN:</b> I have it too. We should try to talk with her after.
+<b>ANDREW:</b> Shit, I have to get to class. I'll talk to you later?
+<b>BOTAN:</b> Yeah, see ya later.
+
+<<setsprite Portrait2 None>>
+<<setsprite Portrait3 None>>
+...
+<<setsprite Portrait1 None>>
+
+<i>End of Early Morning</i>
+===
+title: BDisagree
+tags:
+colorID: 0
+position: -498,3034
+---
+<b>ANDREW:</b> I think you were too harsh on her.
+<b>BOTAN:</b> Seriously? You're taking her side?
+<b>ANDREW:</b> I'm not taking sides! I think you came out more hostile than you meant to.
+<b>BOTAN:</b> So it's all my fault?
+<b>ANDREW:</b> I'm not saying that!
+<b>BOTAN:</b> Whatever, I get it. I'm just trying to be a good friend but whatever.
+<b>ANDREW:</b> ...
+<b>BOTAN:</b> You should get to class.
+<b>ANDREW:</b> Oh, yeah. I'll talk to you later?
+<b>BOTAN:</b> Bye.
+<<setsprite Portrait2 None>>
+<<setsprite Portrait3 None>>
+...
+<<setsprite Portrait1 None>>
+
+<i>End of Early Morning</i>
+<<set $BFRIENDSHIP to $BFRIENDSHIP - 2>>
+===
+title: SSide
+tags:
+colorID: 0
+position: -288,2355
+---
+<b>ANDREW:</b> Maybe we were too pushy.
+<b>BOTAN:</b> Seriously? You're taking her side?
+<b>ANDREW:</b> I'm not taking sides! All I'm saying is maybe we could have handled it differently.
+<b>BOTAN:</b> This is a great start to the semester.
+
+<<set $BFRIENDSHIP to $BFRIENDSHIP - 1>>
+
+<<if $DEPRESSION < 75>>
+[[Suggest Talking to Sabrina.|SabrinaCompromise]]
+<<else>>
+[[Agree.|Pesimisim]]
+<<endif>>
+===
+title: SabrinaCompromise
+tags:
+colorID: 0
+position: -251,3033
+---
+<b>ANDREW:</b> Maybe we can talk to Sabrina and sort this out?
+<b>BOTAN:</b> You think that would work?
+<b>ANDREW:</b> We can try to apologize, maybe that can get her to help open up to us a little bit.
+<b>BOTAN:</b> I just don't get why she won't tell us. We're her best friends.
+<b>ANDREW:</b> Well, Sabrina has always been quiet about this stuff. Maybe we can meet up for dinner tonight and talk then?
+<b>BOTAN:</b> That's a good idea.
+<b>ANDREW:</b> Shit, I have to get to class. We'll talk later?
+<b>BOTAN:</b> Yeah, see ya later.
+
+
+<<setsprite Portrait2 None>>
+...
+<<setsprite Portrait1 None>>
+<i>End of Early Morning</i>
+
+<<set $BFRIENDSHIP to $BFRIENDSHIP + 1>>
+===
+title: Pesimisim
+tags:
+colorID: 0
+position: -16,3035
+---
+<b>ANDREW:</b> And it's only gonna get worse from here.
+
+<b>BOTAN:</b> Thanks, Debbie Downer.
+
+<b>ANDREW:</b> I'm just being honest.
+
+<b>BOTAN:</b> Sure.
+
+<b>ANDREW:</b> Shit, I have to get to class. I'll see you later.
+
+<b>BOTAN:</b> Bye.
+
+<<setsprite Portrait2 None>>
+...
+<<setsprite Portrait1 None>>
+
+<i>End of Early Morning</i>
+
+<<set $DEPRESSION to $DEPRESSION + 10>>
+===
+title: BotanDream
+tags:
+colorID: 0
+position: 299,1825
+---
+<b>BOTAN:</b> It didn't feel like a dream at first. I got up and went to the bathroom. As I was walking through the hall, something felt off. I mean, I was alone in the hall, but it didn't feel like it. I went to the bathroom and the lights were super dim. But there was someone in front of me all in black.
+
+<b>BOTAN:</b> I asked if they were okay. They turned around and looked at me. I couldn't see their face, but their eyes were blinding. They were white and had no pupils. They started walking towards me; I wanted to run but I felt frozen. Before I could say anything, they grabbed my hand. I tried pulling away but their grip was so strong. They were mumbling under their breath. I couldn't hear a lot of what they were saying, but I remember some words. Stuff like "one being one" and "birth" and "death." Finally they leaned close and said "Your eyes are open, your mind is ready."
+
+<b>BOTAN:</b> They let go of me. I was freaked out. I shouted at them, asking them who they were. They just said "In time, you will learn." Then they vanished! I had no idea where the fuck they went, they just faded out of sight. At this point, I was convinced I was hallucinating. Maybe I was just tired. I'm surprised I didn't piss myself right there. I took a deep breath and went to a urinal. I did my thing and went to the sink to wash my hands. When I started washing them, I heard this weird gurggling sound. I shrugged it off, maybe it was just the sink. But then it got louder and louder. Eventually, I looked into the mirror.
+
+<b>BOTAN:</b> There was this giant fucking monster staring at me. It had two heads gaping at me. One had a hideous grin with these weird fucking eyes moving everywhere. The other face had this horrible frown with it's mouth open oozing some weird clear liquid. I ran to the door and tried to open it, but it was stuck. I banged on the door, I screamed for help. I was crying by this point. But no one came. Each time I pounded, I felt weaker and weaker. Eventually, I fell to the floor while this thing gawked at me. Their mouths were moving, but I couldn't hear what they were saying. Then... Its scream. Oh god, it made this high pitched scream that scared the fuck out of me. Then it rushed towards me and I screamed and... I woke up.
+
+<b>SABRINA:</b> Wow...
+
+[[Brush It Off.|BrushDream]]
+[[Get Concerned.|ConcernDream]]
+===
+title: BrushDream
+tags:
+colorID: 0
+position: 239,3039
+---
+<b>ANDREW:</b> Just sounds like a really bad nightmare.
+
+<b>BOTAN:</b> Dude, "really bad" doesn't even fucking describe what it felt like. It was horrifying.
+
+<b>ANDREW:</b> Do you really think it could mean something?
+
+<b>BOTAN:</b> Probably! I never had a dream that fucked up before!
+
+<b>ANDREW:</b> I don't know, I think you just had a stress dream. With school starting, it makes sense to have a weird dream like that.
+
+<b>SABRINA:</b> I guess that could be the case.
+
+<b>BOTAN:</b> Did you guys hear what I said? That wasn't just a regular nightmare!
+
+<b>ANDREW:</b> Maybe you should stop smoking before bed, I doubt that's helping you.
+
+<b>BOTAN:</b> Maybe if I was smoking weed. I highly doubt cigarettes make fucked up dreams like that.
+
+<b>SABRINA:</b> Well, it was probably just a really bad nightmare. Nightmares can't hurt you.
+
+<b>ANDREW:</b> Exactly.
+
+<b>BOTAN:</b> Yeah, I guess.
+
+<b>SABRINA:</b> It's almost nine, I have to get to class.
+
+<b>ANDREW:</b> Oh, same. We'll meet up later?
+
+<b>BOTAN:</b> Okay.
+
+<b>SABRINA:</b> Yeah. Bye.
+
+<b>BOTAN:</b> Later.
+
+<<setsprite Portrait3 None>>
+<<setsprite Portrait2 None>>
+...
+<<setsprite Portrait1 None>>
+<i>End of Early Morning</i>
+
+<<set $BFRIENDSHIP to $BFRIENDSHIP - 1>>
+===
+title: ConcernDream
+tags:
+colorID: 0
+position: 477,3039
+---
+<b>ANDREW:</b> That sounds awful. I wonder if it does mean something.
+
+<b>BOTAN:</b> I have no idea. This was way too real to not mean something.
+
+<b>SABRINA:</b> Hey, have you kept a dream journal before?
+
+<b>BOTAN:</b> No, I never did.
+
+<b>SABRINA:</b> I have one and it's helped me when I have bad dreams. Maybe you can start doing that.
+
+<b>ANDREW:</b> I didn't know you had a dream journal.
+
+<b>SABRINA:</b> I started using it recently.
+
+<b>BOTAN:</b> How does it help you?
+
+<b>SABRINA:</b> Well, when I get a really bad dream, I write it down. Even if you don't believe your dreams mean something, the journal helps you get everything out. You can take a step back and focus.
+
+<b>ANDREW:</b> That's pretty interesting.
+
+<b>SABRINA:</b> Yeah, and even if I'm having a bad day, I just write down all my thoughts and let it out. It's soothing.
+
+<b>BOTAN:</b> I think I'll try that.
+
+<b>ANDREW:</b> I might, too.
+
+<b>BOTAN:</b> Thanks Sabrina, this really helped.
+
+<b>SABRINA:</b> I'm glad I can help. I'm sorry, I have to get to class.
+
+<b>ANDREW:</b> Shit, I do too.
+
+<b>BOTAN:</b> Can we meet up for dinner tonight?
+
+<b>ANDREW:</b> Sure!
+
+<b>SABRINA:</b> That works for me.
+
+<b>BOTAN:</b> Cool! I'll see you guys later!
+
+<b>SABRINA:</b> See you later.
+
+<b>ANDREW:</b> Bye!
+<<setsprite Portrait3 None>>
+<<setsprite Portrait2 None>>
+...
+<<setsprite Portrait1 None>>
+<i>End of Early Morning</i>
+
+<<set $BFRIENDSHIP to $BFRIENDSHIP + 2>>
+<<set $SFRIENDSHIP to $SFRIENDSHIP + 1>>
+<<set $DEPRESSION to $DEPRESSION - 10>>
+<<set $ANXIETY to $ANXIETY - 5>>
+===
+title: ListenB
+tags:
+colorID: 0
+position: 721,762
+---
+<b>BOTAN:</b> I mean, after what happened over the summer, you haven't really seemed like yourself.
+
+<b>SABRINA:</b> I don't understand.
+
+<b>BOTAN:</b> You just don't seem happy.
+
+<b>SABRINA:</b> Botan, I'm fine. There's no need to worry about me.
+
+<b>BOTAN:</b> What do you think Andrew?
+
+<<if $ANXIETY < 75>>
+[[Speak Up.|SpeakingUp]]
+<<else>>
+[[Stay Silent.|Silence]]
+<<endif>>
+===
+title: SpeakingUp
+tags:
+colorID: 0
+position: 700,998
+---
+<b>ANDREW:</b> Maybe we should talk about this later.
+
+<b>SABRINA:</b> Or we could just not talk about it.
+
+<b>BOTAN:</b> Why?
+
+<<if $ANXIETY < 75>>
+[[Change the Subject.|SubjectC]]
+<<else>>
+else:
+[[Diffuse the Situation.|FailDiffuseB]]
+<<endif>>
+===
+title: Silence
+tags:
+colorID: 0
+position: 967,1004
+---
+<b>ANDREW:</b> ...
+<b>BOTAN:</b> Really, dude?
+<b>SABRINA:</b> Don't force him to talk if he doesn't want to.
+<b>BOTAN:</b> I can't be the only one who knows something's wrong, right?
+<b>SABRINA:</b> I'm sorry, are you a doctor?
+<b>BOTAN:</b> What? No! But can you just tell me why you're acting so different?
+<b>SABRINA:</b> Are you saying something's wrong with me?
+<b>BOTAN:</b> That's not what I'm saying at all!
+
+<<if $ANXIETY < 75>>
+[[Change the Subject.|SubjectC]]
+<<else>>
+[[Diffuse the Situation.|FailDiffuseB]]
+<<endif>>
+===

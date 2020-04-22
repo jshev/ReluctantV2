@@ -1,0 +1,14 @@
+title: Conversation1
+tags: 
+colorID: 0
+position: 461,222
+---
+<<if visited("Conversation1") is false>>
+    <b>NPC1:</b> Thank god I'm done being an orientation leader.
+    <b>NPC2:</b> Was it that bad?
+    <b>NPC1:</b> Is being peppy every weekend during the hottest months of summer bad?
+    <b>NPC2:</b> Oh...
+<<else>>
+    <b>NPC1:</b> Want to be an orientation leader next year?
+<<endif>>
+===

@@ -1,0 +1,40 @@
+fileFormatVersion: 2
+guid: 3e5f595fb20d14292a3c45ef49b7dd51
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - Phone2-NewText-0
+  - Phone2-NewText-1
+  - Phone2-NewText-2
+  - Phone2-TextSabrina-3
+  - Phone2-TextSabrina-4
+  - Phone2-TextSabrina-5
+  - Phone2-TextSabrina-6
+  - Phone2-TextSabrina-7
+  - Phone2-TextSabrina-8
+  - Phone2-TextSabrina-9
+  - Phone2-TextSabrina-10
+  - Phone2-TextSabrina-11
+  - Phone2-MakeDinnerPlans-12
+  - Phone2-MakeDinnerPlans-13
+  - Phone2-MakeDinnerPlans-14
+  - Phone2-MakeDinnerPlans-15
+  - Phone2-NoDinnerPlans-16
+  - Phone2-NoDinnerPlans-17
+  - Phone2-NoDinnerPlans-18
+  - Phone2-NoDinnerPlans-19
+  - Phone2-NoDinnerPlans-20
+  - Phone2-NoDinnerPlans-21
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 3e5f595fb20d14292a3c45ef49b7dd51,
+    type: 3}
+  localizations: []
