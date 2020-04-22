@@ -58,6 +58,9 @@ tags:
 colorID: 0
 position: 690,1124
 ---
+<<set $dadagree to false>>
+<<setSociability Bouncer>>
+
 <b>ANDREW:</b> I think I should really start studying, dad. It's only a matter of time before the work piles on.
 <b>DAD:</b> I get it Andrew, but when I was in college I still made time to relax and see friends. How do you think I was able to meet your mother?
 <b>ANDREW:</b> I'm not looking for a girlfriend, dad. Besides, I wouldn't have time.

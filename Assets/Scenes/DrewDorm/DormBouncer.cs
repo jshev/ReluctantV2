@@ -10,12 +10,20 @@ public class DormBouncer : MonoBehaviour
     void Start()
     {
         PlayerPrefs.SetString("nobreakfast", "false");
+        PlayerPrefs.SetString("dadagree", "true");
 		print("nobreakfast is " + PlayerPrefs.GetString("nobreakfast"));
+		print("dadagree is " + PlayerPrefs.GetString("dadagree"));
     }
     
     [YarnCommand("setNoBreakfast")]
     public void noBreakfastTrue() {
 		PlayerPrefs.SetString("nobreakfast", "true");
         print("nobreakfast is now " + PlayerPrefs.GetString("nobreakfast"));
+    }
+
+    [YarnCommand("setSociability")]
+    public void socialFalse() {
+		PlayerPrefs.SetString("dadagree", "false");
+        print("dadagree is now " + PlayerPrefs.GetString("dadagree"));
     }
 }
