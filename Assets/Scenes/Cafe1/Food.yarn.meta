@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: 618506d8a69cf4617aed326e750af259
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - Food-Cereal-0
+  - Food-Cereal-1
+  - Food-Cereal-2
+  - Food-FruitSalad-3
+  - Food-FruitSalad-4
+  - Food-FruitSalad-5
+  - Food-ProteinBar-6
+  - Food-ProteinBar-7
+  - Food-ProteinBar-8
+  - Food-FoodChoice-9
+  - Food-FoodChoice-10
+  - Food-FoodChoice-11
+  - Food-KeepMoving-12
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 618506d8a69cf4617aed326e750af259,
+    type: 3}
+  localizations: []

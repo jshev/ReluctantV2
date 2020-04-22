@@ -1,0 +1,50 @@
+title: Cashier
+tags: 
+colorID: 0
+position: -804,115
+---
+<<setsprite Portrait1 Andrew>>
+
+<b>CASHIER:</b> Hello! Did you find everything okay?
+
+<<if $choiceMade is true>> 
+[[ Say Yes. |YES]]
+<<else>> 
+[[ Not Yet. |NotYet]] 
+<<endif>>
+===
+title: YES
+tags: 
+colorID: 0
+position: -927,360
+---
+<b>ANDREW:</b> Ummm... Yeah.
+
+<<if $food is 0>>
+<b>CASHIER:</b> Cereal, huh? That'll be $2.50... Thank you, and have a nice day!
+<b>ANDREW:</b> Yeah, you too.
+<<setsprite Portrait1 None>>
+<<endif>> 
+
+<<if $food is 2>>
+<b>CASHIER:</b> A protein bar, huh? That'll be $2.70... Thank you, and have a nice day!
+<b>ANDREW:</b> Yeah, you too.
+<<setsprite Portrait1 None>>
+<<endif>> 
+
+<<if $food is 1>>
+<b>CASHIER:</b> Fruit salad, huh? That'll be $4.75... Thank you, and have a nice day!
+<b>ANDREW:</b> Yeah, you too.
+<<setsprite Portrait1 None>>
+<<endif>>
+===
+title: NotYet
+tags: 
+colorID: 0
+position: -683,364
+---
+<b>ANDREW:</b> Uh, no, having found anything yet.
+<b>CASHIER:</b> Oh, well, let me know when you do!
+
+<<setsprite Portrait1 None>>
+===

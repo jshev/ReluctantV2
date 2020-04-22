@@ -1,0 +1,76 @@
+title: Cereal
+tags: 
+colorID: 0
+position: -261,118
+---
+<<if $choiceMade is false>>
+<<setsprite Portrait1 Andrew>>
+
+<<set $food to 0>>
+<b>ANDREW:</b> $2.50 for cereal?
+
+[[ Grab cereal. |FoodChoice]]
+[[ Leave cereal. |KeepMoving]]
+<<endif>>
+===
+title: FruitSalad
+tags: 
+colorID: 0
+position: 7,121
+---
+<<if $choiceMade is false>>
+<<setsprite Portrait1 Andrew>>
+
+<<set $food to 1>>
+<b>ANDREW:</b> $4.75 for fruit salad?
+
+[[ Grab fruit salad. |FoodChoice]]
+[[ Leave fruit salad. |KeepMoving]]
+<<endif>>
+===
+title: ProteinBar
+tags: 
+colorID: 0
+position: 294,120
+---
+<<if $choiceMade is false>>
+<<setsprite Portrait1 Andrew>>
+<<set $food to 2>>
+<b>ANDREW:</b> $2.70 for protein bar?
+
+[[ Grab protein bar. |FoodChoice]]
+[[ Leave protein bar. |KeepMoving]]
+<<endif>>
+===
+title: FoodChoice
+tags: 
+colorID: 0
+position: -111,403
+---
+<<if $food is 0>>
+<b>ANDREW:</b> Cereal sounds good.
+<<set $choiceMade to true>>
+<<setsprite Portrait1 None>>
+<<endif>>
+
+<<if $food is 2>>
+<b>ANDREW:</b> A protein bar sounds good.
+<<set $choiceMade to true>>
+<<setsprite Portrait1 None>>
+<<endif>>
+
+<<if $food is 1>>
+<b>ANDREW:</b> Fruit salad sounds good.
+<<set $choiceMade to true>>
+<<setsprite Portrait1 None>>
+<<endif>>
+===
+title: KeepMoving
+tags: 
+colorID: 0
+position: 157,405
+---
+<b>ANDREW:</b> Eh... Let's see what else there is.
+
+<<setsprite Portrait1 None>>
+===

@@ -1,0 +1,80 @@
+fileFormatVersion: 2
+guid: b605cbb2b016b4e8799814509265541b
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - InitialSit-Sitting-0
+  - InitialSit-Sitting-1
+  - InitialSit-Sitting-2
+  - InitialSit-SocialM-3
+  - InitialSit-SocialM-4
+  - InitialSit-SocialM-5
+  - InitialSit-SocialM-6
+  - InitialSit-Textbook-7
+  - InitialSit-Textbook-8
+  - InitialSit-Textbook-9
+  - InitialSit-Textbook-10
+  - InitialSit-Textbook-11
+  - InitialSit-Textbook-12
+  - InitialSit-Textbook-13
+  - InitialSit-Textbook-14
+  - InitialSit-Textbook-15
+  - InitialSit-Textbook-16
+  - InitialSit-Textbook-17
+  - InitialSit-DadSocial-18
+  - InitialSit-DadSocial-19
+  - InitialSit-DadSocial-20
+  - InitialSit-DadSocial-21
+  - InitialSit-DadSocial-22
+  - InitialSit-DadSocial-23
+  - InitialSit-DadSocial-24
+  - InitialSit-DadSocial-25
+  - InitialSit-DadSocial-26
+  - InitialSit-DadSocial-27
+  - InitialSit-DadSocial-28
+  - InitialSit-DadSocial-29
+  - InitialSit-DadSocial-30
+  - InitialSit-DadUnsocial-31
+  - InitialSit-DadUnsocial-32
+  - InitialSit-DadUnsocial-33
+  - InitialSit-DadUnsocial-34
+  - InitialSit-DadUnsocial-35
+  - InitialSit-DadUnsocial-36
+  - InitialSit-DadUnsocial-37
+  - InitialSit-DadUnsocial-38
+  - InitialSit-DadUnsocial-39
+  - InitialSit-DadUnsocial-40
+  - InitialSit-DadUnsocial-41
+  - InitialSit-DadUnsocial-42
+  - InitialSit-DadUnsocial-43
+  - InitialSit-DadUnsocial-44
+  - InitialSit-DadUnsocial-45
+  - InitialSit-DadUnsocial-46
+  - InitialSit-DadUnsocial-47
+  - InitialSit-DadUnsocial-48
+  - InitialSit-ApologyB-49
+  - InitialSit-ApologyB-50
+  - InitialSit-ApologyB-51
+  - InitialSit-ApologyB-52
+  - InitialSit-Defending-53
+  - InitialSit-Defending-54
+  - InitialSit-Defending-55
+  - InitialSit-Defending-56
+  - InitialSit-Defending-57
+  - InitialSit-Defending-58
+  - InitialSit-Defending-59
+  - InitialSit-Defending-60
+  - InitialSit-Defending-61
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: b605cbb2b016b4e8799814509265541b,
+    type: 3}
+  localizations: []

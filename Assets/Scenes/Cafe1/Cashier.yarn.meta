@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: dfa31a79e83954219a9cec917910378f
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - Cashier-Cashier-0
+  - Cashier-Cashier-1
+  - Cashier-Cashier-2
+  - Cashier-YES-3
+  - Cashier-YES-4
+  - Cashier-YES-5
+  - Cashier-YES-6
+  - Cashier-YES-7
+  - Cashier-YES-8
+  - Cashier-YES-9
+  - Cashier-NotYet-10
+  - Cashier-NotYet-11
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: dfa31a79e83954219a9cec917910378f,
+    type: 3}
+  localizations: []
