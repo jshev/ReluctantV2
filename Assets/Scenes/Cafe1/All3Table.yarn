@@ -452,7 +452,7 @@ position: -498,3034
 ...
 <<setsprite Portrait1 None>>
 
-<i>End of Early Morning</i>
+<<endEarlyMorning Bouncer>>
 <<set $BFRIENDSHIP to $BFRIENDSHIP - 2>>
 ===
 title: SSide
