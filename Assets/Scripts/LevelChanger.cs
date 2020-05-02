@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Yarn.Unity;
+using Yarn.Unity.Example;
 
 public class LevelChanger : MonoBehaviour
 {
@@ -20,7 +22,8 @@ public class LevelChanger : MonoBehaviour
         levelToLoad = levelIndex;
         animator.SetTrigger("FadeOut");
     } */
-
+    
+    [YarnCommand("fade")]
     public void FadeToLevel(string lvlName)
     {
         levelToLoad = lvlName;

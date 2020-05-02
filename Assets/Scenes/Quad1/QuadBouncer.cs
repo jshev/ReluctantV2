@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Yarn.Unity;
+using Yarn.Unity.Example;
 
 public class QuadBouncer : MonoBehaviour
 {
     public GameObject Player;
     public GameObject LibraryDoor;
     public GameObject CafeDoor;
+    public GameObject SchoolDoor;
     public GameObject Botan;
     public GameObject talkSab;
     public GameObject walkSab;
@@ -15,6 +19,7 @@ public class QuadBouncer : MonoBehaviour
     {
         LibraryDoor = GameObject.Find("LibraryDoor");
         CafeDoor = GameObject.Find("CafeDoor");
+        SchoolDoor = GameObject.Find("SchoolDoor");
         Botan = GameObject.Find("Botan");
         talkSab = GameObject.Find("TalkSabrina");
         walkSab = GameObject.Find("WalkSabrina");
@@ -24,6 +29,7 @@ public class QuadBouncer : MonoBehaviour
         if (PlayerPrefs.GetString("LastScene") == "DormLobby2") {
             talkSab.SetActive(false);
             walkSab.SetActive(false);
+            SchoolDoor.SetActive(false);
             if (PlayerPrefs.GetString("nobreakfast") == "true") {
                 CafeDoor.SetActive(false);
                 Botan.SetActive(false);
@@ -36,6 +42,7 @@ public class QuadBouncer : MonoBehaviour
             LibraryDoor.SetActive(false);
             CafeDoor.SetActive(false);
             Botan.SetActive(false);
+            SchoolDoor.SetActive(false);
             if (PlayerPrefs.GetString("apologizetobotan") == "true") {
                 walkSab.SetActive(false);
             } else {
@@ -52,6 +59,15 @@ public class QuadBouncer : MonoBehaviour
             LibraryDoor.SetActive(false);
             Player.transform.position = new Vector3(10.45f, -18.43f, 0f);
         }
+
+        PlayerPrefs.SetString("LastScene", SceneManager.GetActiveScene().name);
+    }
+
+    [YarnCommand("endEarlyMorning")]
+    public void endMorning() {
+        //PlayerPrefs.SetString("endearlymorning", "true");
+        //print("endearlymorning is now " + PlayerPrefs.GetString("endearlymorning"));
+        SchoolDoor.SetActive(true);
     }
 
     // Update is called once per frame

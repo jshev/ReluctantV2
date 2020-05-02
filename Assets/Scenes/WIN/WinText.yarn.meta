@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 6982999102e8f4284ada1ee4d7126b5a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - WinText-Winner-0
+  - WinText-Winner-1
+  - WinText-Winner-2
+  - WinText-Winner-3
+  - WinText-AndrewWinClassA-4
+  - WinText-AndrewWinClassA-5
+  - WinText-AndrewWinClassA-6
+  - WinText-AndrewWinClassA-7
+  - WinText-AndrewWinClassA-8
+  - WinText-AndrewWinClassA-9
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 6982999102e8f4284ada1ee4d7126b5a,
+    type: 3}
+  localizations: []

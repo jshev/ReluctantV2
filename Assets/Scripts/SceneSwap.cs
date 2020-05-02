@@ -22,4 +22,13 @@ public class SceneSwap : MonoBehaviour
             SceneManager.LoadScene(sceneName);
         }
     }
+
+    public void SceneLoadONE (string scn)
+    {
+        if (lvlC != null) {
+            lvlC.FadeToLevel(scn);
+        } else {
+            SceneManager.LoadScene(scn);
+        }
+    }
 }

@@ -1,0 +1,37 @@
+fileFormatVersion: 2
+guid: 3fdb2a6ff1027444dace2bf246cb29f9
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - ProfDesk-Troubles-0
+  - ProfDesk-Troubles-1
+  - ProfDesk-Troubles-2
+  - ProfDesk-LietoPac-3
+  - ProfDesk-LietoPac-4
+  - ProfDesk-LietoPac-5
+  - ProfDesk-LietoPac-6
+  - ProfDesk-LietoPac-7
+  - ProfDesk-LietoPac-8
+  - ProfDesk-HonesttoP-9
+  - ProfDesk-HonesttoP-10
+  - ProfDesk-HonesttoP-11
+  - ProfDesk-HonesttoP-12
+  - ProfDesk-HonesttoP-13
+  - ProfDesk-HonesttoP-14
+  - ProfDesk-HonesttoP-15
+  - ProfDesk-HonesttoP-16
+  - ProfDesk-HonesttoP-17
+  - ProfDesk-HonesttoP-18
+  - ProfDesk-HonesttoP-19
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

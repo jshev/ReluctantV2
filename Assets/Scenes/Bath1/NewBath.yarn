@@ -1,0 +1,12 @@
+title: Start
+tags:
+colorID: 0
+position: 254,446
+---
+<<setsprite Portrait1 Andrew>>
+<b>ANDREW:</b> What the hell was that...
+. . .
+<b>ANDREW:</b> Wow, no one here. That's rare.
+<b>ANDREW:</b> I should go in a stall just to be safe.
+<<setsprite Portrait1 None>>
+===

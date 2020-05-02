@@ -430,7 +430,7 @@ position: -778,3030
 ...
 <<setsprite Portrait1 None>>
 
-<i>End of Early Morning</i>
+<<endEarlyMorning Bouncer>>
 ===
 title: BDisagree
 tags:
@@ -491,7 +491,7 @@ position: -251,3033
 <<setsprite Portrait2 None>>
 ...
 <<setsprite Portrait1 None>>
-<i>End of Early Morning</i>
+<<endEarlyMorning Bouncer>>
 
 <<set $BFRIENDSHIP to $BFRIENDSHIP + 1>>
 ===
@@ -516,7 +516,7 @@ position: -16,3035
 ...
 <<setsprite Portrait1 None>>
 
-<i>End of Early Morning</i>
+<<endEarlyMorning Bouncer>>
 
 <<set $DEPRESSION to $DEPRESSION + 10>>
 ===
@@ -581,7 +581,7 @@ position: 239,3039
 <<setsprite Portrait2 None>>
 ...
 <<setsprite Portrait1 None>>
-<i>End of Early Morning</i>
+<<endEarlyMorning Bouncer>>
 
 <<set $BFRIENDSHIP to $BFRIENDSHIP - 1>>
 ===
@@ -637,7 +637,7 @@ position: 477,3039
 <<setsprite Portrait2 None>>
 ...
 <<setsprite Portrait1 None>>
-<i>End of Early Morning</i>
+<<endEarlyMorning Bouncer>>
 
 <<set $BFRIENDSHIP to $BFRIENDSHIP + 2>>
 <<set $SFRIENDSHIP to $SFRIENDSHIP + 1>>

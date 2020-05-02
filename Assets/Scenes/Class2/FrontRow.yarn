@@ -1,0 +1,40 @@
+title: FrontOfClass
+tags:
+colorID: 0
+position: 395,219
+---
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Professor>>
+
+<b>ANDREW:</b> O-oh, okay.
+<b>ANDREW:</b> S-so, m-my nam-
+<b>NPC:</b> Can you stop stuttering?
+<b>ANDREW:</b> A-ah! I'm sorry! My n-name-
+<b>NPC:</b> I said stop!
+<b>PROFESSOR:</b> Let's try something else.
+<b>ANDREW:</b> O-okay.
+<b>PROFESSOR:</b> Why don't you tell the class about how you abandoned your friend?
+<b>ANDREW:</b> Wh-what?
+<b>PROFESSOR:</b> Your friend was really onto something, and instead you ridiculed them. You told them they were broken.
+<b>ANDREW:</b> I never said that!
+<b>PROFESSOR:</b> Actions speak louder than words, Andrew. You were too weak to stand up for yourself and you ran away, like you always do.
+<b>ANDREW:</b> Wh-what the hell are you talking about?!
+<b>PROFESSOR:</b> Allow me to introduce myself...
+
+[[! ! !|MonsterRevealinClass]]
+===
+title: MonsterRevealinClass
+tags:
+colorID: 0
+position: 394,431
+---
+<<setsprite Portrait2 None>>
+<<setsprite Imposter Demon>>
+
+<b>ANDREW:</b> Wh-what the hell are you?!
+<b>DEMON:</b> I'm the fear that always watches you. In your darkest moments, I stay with you. I've watched you grow into a scared, little boy. And now, you can't run from me anymore!
+<b>ANDREW:</b> A-ah!
+
+<<setsprite Portrait1 None>>
+<<fade LevelChanger Battle>>
+===

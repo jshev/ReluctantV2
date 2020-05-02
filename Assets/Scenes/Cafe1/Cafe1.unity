@@ -3635,7 +3635,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1736401067
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4081,6 +4081,7 @@ MonoBehaviour:
   TableSabrina: {fileID: 1917881545}
   TableBotan: {fileID: 319787564}
   FINALCHAIR: {fileID: 1852152489}
+  doorToQuad: {fileID: 1443041879739700508}
 --- !u!1 &1917881545
 GameObject:
   m_ObjectHideFlags: 0
@@ -4782,7 +4783,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443041879739700508}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -26.2, y: -0.48, z: 0}
+  m_LocalPosition: {x: -3.42, y: -0.56, z: 0}
   m_LocalScale: {x: 1, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

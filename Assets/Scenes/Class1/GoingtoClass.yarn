@@ -1,0 +1,415 @@
+title: GoingtoClass
+tags: 
+colorID: 0
+position: -2212,-4053
+---
+<i>Vvvvvv!</i>
+<b>ANDREW:</b> Now Mom's texting me...
+
+<<setsprite Portrait1 Andrew>>
+
+<<if $DEPRESSION < 75>> 
+[[Answer text|AnswerMom]]
+<<else>> 
+[[Dismiss text|NoAnswerMom]]
+<<endif>>
+===
+title: AnswerMom
+tags: 
+colorID: 0
+position: -2380,-3818
+---
+<b>MOM:</b> Hi sweetie! How is everything?
+<b>ANDREW:</b> Hey mom, I just got to class
+<b>MOM:</b> That's good, how is everything? I wanted to check up on you
+
+[[Say you're fine.|LieMom]]
+<<if $nobreakfast is true>> 
+[[Talk about what happened with Botan.|BotanDrama]]
+<<endif>> 
+<<if $sabrinaleave>>
+[[Talk about what happened with Sabrina.|SabrinaDrama]]
+<<endif>>
+===
+title: NoAnswerMom
+tags: 
+colorID: 0
+position: -2104,-3815
+---
+<b>ANDREW:</b> . . .
+
+[[Put away your phone.|Class1]]
+===
+title: Class1
+tags: 
+colorID: 0
+position: -2022,-2472
+---
+<<setsprite Portrait2 Professor>>
+<<setsprite Imposter Professor>>
+
+<b>PROFESSOR:</b> Morning everyone, I hope you weren't waiting long!
+<b>PROFESSOR:</b> Alright, let me take attendance...
+<b>PROFESSOR:</b> Is UEPFJIWOEPJFIOPWD()Q) here?
+
+[[Huh?|Class2]]
+===
+title: LieMom
+tags: 
+colorID: 0
+position: -2595,-3500
+---
+<b>ANDREW:</b> I'm okay
+<b>MOM:</b> I missed you this weekend, but I'm glad you're doing well
+<b>ANDREW:</b> I missed you too. I'm sorry I didn't call much, I had to set up my dorm
+<b>MOM:</b> That's good, everything has been okay?
+<b>ANDREW:</b> Yeah, I'm okay. Why do you ask that?
+<b>MOM:</b> Your father and I talked last night. We think it might be a good idea to look into a therapist
+
+<<if $DEPRESSION < 80>> 
+[[Talk about it|TalkAboutTherapyS]]
+<<else>> 
+[[End the conversation|EndConvo]]
+<<endif>>
+===
+title: BotanDrama
+tags: 
+colorID: 0
+position: -2370,-3503
+---
+<b>ANDREW:</b> Could be better
+<b>MOM:</b> What's wrong?
+<b>ANDREW:</b> I got into an argument with Botan. They wanted to hang out but I wanted to focus on school work
+<b>MOM:</b> I'm sorry sweetheart, have you talked to them?
+<b>ANDREW:</b> Well, I saw them when I was heading to class and we got into an argument
+<b>MOM:</b> Well, I understand you want to focus on school. But I do think it's important you spend time with your friends and give yourself a break
+
+<<if $ANXIETY < 75>> 
+[[Agree.|AgreeMom]]
+<<else>> 
+[[Disagree.|DisagreeMom]]
+<<endif>>
+===
+title: SabrinaDrama
+tags: 
+colorID: 0
+position: -2148,-3501
+---
+<b>ANDREW:</b> Could be better
+<b>MOM:</b> What's wrong?
+<b>ANDREW:</b> Well, Sabrina, Botan, and I were at breakfast. Botan and I tried talking to Sabrina about what happened over the summer but she got upset and left
+<b>MOM:</b> Why did you bring that up?
+<b>ANDREW:</b> We just wanted to help. We had a feeling that she's been down since then and we wanted to help
+<b>MOM:</b> I understand, but maybe she's not ready to talk about this. She went through a lot and it may be hurtful to bring it back up
+
+<<if $ANXIETY < 80>> 
+[[Agree.|AgreeMomS]]
+<<else>> 
+[[Disagree.|DisagreeMomS]]
+<<endif>>
+===
+title: TalkAboutTherapyS
+tags: 
+colorID: 0
+position: -2773,-3262
+---
+<b>ANDREW:</b> I haven't really thought about it
+<b>MOM:</b> I think that could help you. Before I had you, I saw a therapist who helped me a lot. It might be a good idea to look into one for yourself
+
+<<if $DEPRESSION < 75>> 
+[[Agree.|AgreeTherapy]]
+<<else>> 
+[[Hold off for now.|DisagreeTherapy]]
+<<endif>>
+===
+title: EndConvo
+tags: 
+colorID: 0
+position: -2556,-3262
+---
+<b>ANDREW:</b> Class is starting, gotta go
+<b>MOM:</b> Okay, we'll talk about this later
+
+<<set $ANXIETY to $ANXIETY + 5>>
+
+[[Put away your phone.|Class1]]
+===
+title: AgreeTherapy
+tags: 
+colorID: 0
+position: -2919,-3020
+---
+<b>ANDREW:</b> I guess I can look into it
+<b>MOM:</b> They have counselors on campus, right? Maybe  you can schedule an appointment there?
+<b>ANDREW:</b> I guess so
+<b>MOM:</b> It's a big step, Andrew. I'm proud of you
+<b>ANDREW:</b> Thanks, class is starting, gotta go
+<b>MOM:</b> Okay, love you!
+<b>ANDREW:</b> Love you too
+
+[[Put away your phone.|Class1]]
+===
+title: DisagreeTherapy
+tags: 
+colorID: 0
+position: -2681,-3026
+---
+<b>ANDREW:</b> I don't think I should right now. I'm too busy with school
+
+<b>MOM:</b> Your father and I could help you find one
+
+<b>ANDREW:</b> Class is starting, gotta go
+
+<b>MOM:</b> Okay, we'll talk about this later
+
+<<set $ANXIETY to $ANXIETY + 5>> 
+
+[[Put away your phone.|Class1]]
+===
+title: AgreeMom
+tags: 
+colorID: 0
+position: -2448,-3023
+---
+<b>ANDREW:</b> You're right, I just want to focus on school and make sure I pass my classes.
+<b>MOM:</b> I know, but you're already doing great! You put so much pressure on yourself, but you're doing great!
+<b>ANDREW:</b> Thanks mom, I appreciate it. Class is starting, gotta go
+<b>MOM:</b> Okay, talk to you later! Love you!
+<b>ANDREW:</b> Love you too
+
+<<set $ANXIETY to $ANXIETY - 5>>
+<<set $DEPRESSION to $DEPRESSION - 5>> 
+
+[[Put away your phone.|Class1]]
+===
+title: DisagreeMom
+tags: 
+colorID: 0
+position: -2230,-3020
+---
+<b>ANDREW:</b> I know, but I also know that school is important
+<b>MOM:</b> You already have homework on the first day?
+<b>ANDREW:</b> Well, not exactly. I like to get a head start
+<b>MOM:</b> You prioritize your work, and that's great! But you should also make time for your friends. They really care about you and even just to hang out for a half hour can help
+
+<<if $ANXIETY < 80>>
+[[Agree with Mom.|AgreeMom2]]
+<<else>> 
+[[Disagree.|ArgueMom]]
+<<endif>>
+===
+title: AgreeMom2
+tags: 
+colorID: 0
+position: -2181,-2776
+---
+<b>ANDREW:</b> I guess you're right
+<b>MOM:</b> I know this stuff takes time. But little by little, it'll really help along the way
+<b>ANDREW:</b> Thanks mom, I appreciate it. Class is starting, gotta go
+<b>MOM:</b> Okay, I'll talk to you later, love you!
+<b>ANDREW:</b> Love you too
+
+<<set $ANXIETY to $ANXIETY - 5>>
+
+[[Put away your phone.|Class1]]
+===
+title: ArgueMom
+tags: 
+colorID: 0
+position: -1959,-2778
+---
+<b>ANDREW:</b> Do you really think that could help me?
+<b>MOM:</b> I'm just trying to help
+<b>ANDREW:</b> I know, but maybe I shouldn't do that. Maybe that's not what I need
+<b>MOM:</b> Have you tried it?
+<b>ANDREW:</b> It's not that easy. I just can't decide that I'm going to step out of my comfort zone and do something that'll make me feel worse
+<b>MOM:</b> I'm not trying to argue. I'm trying to help
+<b>ANDREW:</b> I need to go, class is starting
+<b>MOM:</b> We'll talk about this later
+
+<<set $DEPRESSION to $DEPRESSION + 5>> 
+
+[[Put away your phone.|Class1]]
+===
+title: AgreeMomS
+tags: 
+colorID: 0
+position: -1902,-3346
+---
+<b>ANDREW:</b> I guess, we just want to help her
+<b>MOM:</b> I know honey, you have a good heart. This just may not be something she's ready to talk about
+
+[[Agree.|AgreeMomS2]]
+<<if $apologizetosabrina is true>> 
+[[Ask how to apologize.|HowApologizeS]]
+<<else>>
+[[Ask how to help.|HowHelpS]]
+<<endif>>
+===
+title: DisagreeMomS
+tags: 
+colorID: 0
+position: -1684,-3342
+---
+<b>ANDREW:</b> But what if something's wrong? I don't want her to hold it in and she makes herself worse
+<b>MOM:</b> If something serious was going on, I think she would tell you
+<b>ANDREW:</b> You know Sabrina, she's not one to show her emotions
+<b>MOM:</b> I know, but you can't pressure her to talk about this. She needs time after what happened. Let her come to you if she wants to discuss this
+
+<<if $ANXIETY < 85>> 
+[[Agree with mom.|AgreeMomS3]]
+<<else>> 
+[[Disagree.|DisagreeMomS2]]
+<<endif>>
+===
+title: AgreeMomS2
+tags: 
+colorID: 0
+position: -1566,-2859
+---
+<b>ANDREW:</b> Yeah, I should just wait until she brings it up to me
+<b>MOM:</b> Exactly, I think that's a good idea
+<b>ANDREW:</b> Class is starting, I gotta go
+<b>MOM:</b> Okay, love you!
+<b>ANDREW:</b> Love you too
+
+[[Put away your phone.|Class1]]
+===
+title: HowApologizeS
+tags: 
+colorID: 0
+position: -1345,-2862
+---
+<b>ANDREW:</b> Botan and I plan on apologizing to her, but is there more I should do?
+<b>MOM:</b> Maybe you can do something nice for her. Maybe you and Botan can take her out for dinner
+<b>ANDREW:</b> We can try that
+<b>MOM:</b> I know you don't like conflict, but you're doing the right thing
+<b>ANDREW:</b> Thanks, mom. I have to go, class is starting
+<b>MOM:</b> Okay, love you!
+<b>ANDREW:</b> Love you too
+
+<<set $ANXIETY to $ANXIETY - 5>>
+<<set $DEPRESSION to $DEPRESSION - 5>> 
+
+[[Put away your phone.|Class1]]
+===
+title: HowHelpS
+tags: 
+colorID: 0
+position: -1135,-2862
+---
+<b>ANDREW:</b> How can I help her?
+<b>MOM:</b> Well, you should start by apologizing to her. It might also help to do something nice for her. Maybe you and Botan can take her out for dinner?
+<b>ANDREW:</b> I can try that
+<b>MOM:</b> I know you don't like conflict, but you have a good heart. I know you can do this
+<b>ANDREW:</b> Thanks, mom. Class is starting, gotta go
+<b>MOM:</b> Okay, love you!
+<b>ANDREW:</b> Love you too
+
+<<set $ANXIETY to $ANXIETY - 5>>
+<<set $DEPRESSION to $DEPRESSION - 5>> 
+<<set $apologizetosabrina to true>>
+
+[[Put away your phone.|Class1]]
+===
+title: AgreeMomS3
+tags: 
+colorID: 0
+position: -1982,-3113
+---
+<b>ANDREW:</b> You're right, I'm sorry. I just get worried with stuff like this
+<b>MOM:</b> I know, I had problems like this too when I was your age. It's difficult to manage at times, but you need to remember you're in control of your life. You can't control what other people do
+<b>ANDREW:</b> I know, it just sucks
+<b>MOM:</b> I know, it's a difficult time. You know you can always talk to me about this, right?
+<b>ANDREW:</b> Yeah, I know. Thank you
+<b>MOM:</b> Have you considered seeing a therapist?
+
+<<if $DEPRESSION < 80>>
+[[Talk about it.|TalkAboutTherapyS]]
+<<else>> 
+[[Stop conversation.|EndConvo]]
+<<endif>>
+===
+title: DisagreeMomS2
+tags: 
+colorID: 0
+position: -1764,-3107
+---
+<b>ANDREW:</b> But what if she never tells me? What if something awful happens?
+<b>MOM:</b> Andrew, it's good to care about your friends. But if Sabrina isn't ready to talk about this, you can't force her to. She's been through a lot, you may have to give her some space.
+<b>ANDREW:</b> I need to go, I have class
+<b>MOM:</b> Okay, we'll talk later
+
+[[Put away your phone.|Class1]]
+===
+title: Class2
+tags: 
+colorID: 0
+position: -2023,-2237
+---
+<<setsprite Portrait2 Follower>>
+<<setsprite Imposter Follower>>
+
+<b>ANDREW:</b> Agh!
+<b>FOLLOWER:</b> Hello there.
+<b>ANDREW:</b> Wh-who are you?!
+<b>FOLLOWER:</b> Who do you think I am?
+<b>ANDREW:</b> Wh-what the hell is happening?!
+<b>FOLLOWER:</b> What do you think is happening?
+
+[[Answer me!|Class3]]
+===
+title: Class3
+tags: 
+colorID: 0
+position: -1805,-2234
+---
+<<setsprite Classroom Circle>>
+
+<b>ANDREW:</b> Agh!
+<b>FOLLOWER:</b> Nowhere to go.
+<b>FOLLOWER:</b> Trapped in a world created by you.
+<b>FOLLOWER:</b> Stuck. Stranded. Out of reach.
+<b>FOLLOWER:</b> Alone.
+
+[[Tell me what's happening!|Class4]]
+===
+title: Class4
+tags: 
+colorID: 0
+position: -1590,-2231
+---
+<<setsprite Imposter None>>
+<<setsprite Imposter2 Follower>>
+
+<b>FOLLOWER:</b> Don't you see?
+<b>FOLLOWER:</b> Your mind is open.
+<b>FOLLOWER:</b> You can't ignore it anymore.
+<b>FOLLOWER:</b> It's out of your control.
+
+[[! ! !|Class5]]
+===
+title: Class5
+tags: 
+colorID: 0
+position: -1377,-2230
+---
+<b>PROFESSOR:</b> Andrew Wasron? Andrew?
+
+<<setsprite Portrait2 Professor>>
+<<setsprite Imposter Professor>>
+<<setsprite Imposter2 None>>
+<<setsprite Classroom Normal>>
+
+<b>ANDREW:</b> Huh?
+<b>PROFESSOR:</b> Andrew?
+<b>ANDREW:</b> Uh, yeah! Here!
+<b>PROFESSOR:</b> I almost marked you absent, try to respond next time.
+<b>ANDREW:</b> Oh, uh, sorry. Can I go to the restroom?
+<b>PROFESSOR:</b> You don't have to ask.
+<b>ANDREW:</b> Oh! Right! S-Sorry!
+
+<<enableBox Door>>
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
+===

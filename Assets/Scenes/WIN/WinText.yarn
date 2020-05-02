@@ -1,0 +1,36 @@
+title: Winner
+tags: 
+colorID: 0
+position: 390,222
+---
+<<setsprite Portrait1 Andrew>>
+
+<b>DEMON:</b> I'm impressed...Somehow you had something inside you.
+<b>ANDREW:</b> ...
+<b>DEMON:</b> But it's not over.
+
+[[. . .|AndrewWinClassA]]
+===
+title: AndrewWinClassA
+tags: 
+colorID: 0
+position: 391,436
+---
+<b>PROFESSOR:</b> Andrew?
+
+<<setsprite Imposter Professor>> 
+<<setsprite Portrait2 Professor>>
+
+<b>ANDREW:</b> A-ah!
+
+<b>PROFESSOR:</b> Is everything okay, Andrew? You seemed spaced out after your ice breaker.
+
+<b>ANDREW:</b> O-oh, sorry.
+
+<b>PROFESSOR:</b> It's alright, just return to your seat.
+
+<b>ANDREW:</b> R-right.
+
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
+===

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3c524d9fb04d0454c9e04b21e80ed21a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - BRguy-BathroomGuy-0
+  - BRguy-BathroomGuy-1
+  - BRguy-BathroomGuy-2
+  - BRguy-BathroomGuy-3
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 3c524d9fb04d0454c9e04b21e80ed21a,
+    type: 3}
+  localizations: []

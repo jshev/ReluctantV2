@@ -1,0 +1,162 @@
+title: HeFollows
+tags:
+colorID: 0
+position: 390,222
+---
+<<setsprite Portrait1 Andrew>>
+<b>ANDREW:</b> ...
+
+<<setsprite Imposter Follower>>
+<<setsprite Portrait2 Follower>>
+
+<b>ANDREW:</b> Ah!
+<b>FOLLOWER:</b> Hello.
+
+[[Talk to them.|HelloFollower]]
+[[Ignore them.|IgnoreFollower]]
+===
+title: HelloFollower
+tags:
+colorID: 0
+position: 240,465
+---
+<b>ANDREW:</b> You again? What do you want?!
+<b>FOLLOWER:</b> Let's talk.
+<b>ANDREW:</b> About what? What the hell are you?!
+<b>FOLLOWER:</b> Hm, you try so hard to play the fool. I've given you enough information to answer that question.
+
+[[Ask them what they mean.|AskFMeaning]]
+[[Try to leave.|TryToLeaveF]]
+===
+title: IgnoreFollower
+tags:
+colorID: 0
+position: 479,468
+---
+<b>FOLLOWER:</b> Don't you know how to greet an old friend?
+
+[[Ask them what they want.|WhatFollowerWants]]
+[[Try to run.|TryToLeaveF]]
+===
+title: AskFMeaning
+tags:
+colorID: 0
+position: 66,720
+---
+<b>ANDREW:</b> What are you talking about?
+<b>FOLLOWER:</b> It means I'm here now. Your eyes are finally opened. You can't ignore me anymore.
+<b>ANDREW:</b> B-but I've never seen you before!
+<b>FOLLOWER:</b> Maybe you haven't seen me, but you knew I was there.
+<b>ANDREW:</b> Wh-wha??
+<b>FOLLOWER:</b> You ask so many questions. The fear is taking over. Perhaps I should be clearer, would you like that?
+
+[[Yes.|YesClarityF]]
+[[No.|NoClarityF]]
+===
+title: TryToLeaveF
+tags:
+colorID: 0
+position: 303,717
+---
+<b>FOLLOWER:</b> You can't keep running away.
+<b>ANDREW:</b> I don't know what you want from me. Please, just leave me alone!
+<b>FOLLOWER:</b> I can't do that. I could never leave you.
+<b>ANDREW:</b> What the hell are you talking about?!
+<b>FOLLOWER:</b> Perhaps I should make myself clearer. Would you like that?
+
+[[Yes.|YesClarityF]]
+
+[[No.|NoClarityF]]
+===
+title: WhatFollowerWants
+tags:
+colorID: 0
+position: 551,714
+---
+<b>ANDREW:</b> What the hell do you want from me?!
+<b>FOLLOWER:</b> I just want to talk.
+<b>ANDREW:</b> Why do you keep doing this? I don't know you!
+<b>FOLLOWER:</b> Why do you keep feigning ignorance?
+
+[[Ask them what they mean.|AskFMeaning]]
+[[Try to leave.|TryToLeaveF]]
+===
+title: YesClarityF
+tags:
+colorID: 0
+position: 36,954
+---
+<b>ANDREW:</b> Yes, just tell me who the hell you are.
+<b>FOLLOWER:</b> Very well, listen closely.
+<b>FOLLOWER:</b> I have been with you since birth. I've watched you grow up and become weak. Through this, I become stronger. I have control of your life. You are my puppet, you follow what I say. Your life is mine, I'm the one in control.
+
+[[Ask what they are.|AskWhatFollowerAre]]
+[[Don't take it seriously.|NoSeriousFollow]]
+===
+title: NoClarityF
+tags:
+colorID: 0
+position: 258,955
+---
+<b>ANDREW:</b> No! Why can't you just leave me alone?!
+<b>FOLLOWER:</b> Why do you keep asking the same questions? You can't keep the denying the truth about us.
+<b>ANDREW:</b> Us? What the hell are you talking about?!
+<b>FOLLOWER:</b> Stop playing dumb. I'm here to stay.
+
+[[Ask them why.|WhyFollowStay]]
+[[Don't take it seriously.|NoSeriousFollow]]
+===
+title: WhyFollowStay
+tags:
+colorID: 0
+position: 394,1219
+---
+<b>ANDREW:</b> Why? Why me?
+<b>FOLLOWER:</b> Because I've always been with you, Andrew. This was destined, and there's no changing your fate. I've always been here.
+<b>ANDREW:</b> This doesn't make sense...
+<b>FOLLOWER:</b> I've watched you grow up and become weaker. Through this, I become stronger. I'm the one in control.
+
+[[Ask what they are.|AskWhatFollowerAre]]
+[[Don't take it seriously.|NoSeriousFollow]]
+===
+title: NoSeriousFollow
+tags:
+colorID: 0
+position: 132,1226
+---
+<b>ANDREW:</b> This has to be a joke. You can't be serious!
+<b>FOLLOWER:</b> You can't stay in denial. One day, you'll have to accept the truth. I'll be happy when that day comes.
+
+<<setsprite Imposter None>>
+<<setsprite Portrait2 None>>
+
+<b>ANDREW:</b> Hey! W-wait!
+
+<<setsprite Portrait1 None>>
+<<enableBox BathDoor>>
+===
+title: AskWhatFollowerAre
+tags:
+colorID: 0
+position: -151,1225
+---
+ANDREW: You're not human. What the hell are you?
+
+FOLLOWER: Did you not pay attention?
+
+ANDREW: No, I-
+
+FOLLOWER: It doesn't matter. I've given you all you need to know. I'm just happy we can do this, and this won't be the last.
+
+ANDREW: What does that mean?
+
+FOLLOWER: See you soon.
+
+<<setsprite Imposter None>>
+<<setsprite Portrait2 None>>
+
+ANDREW: Hey! W-wait!
+
+<<setsprite Portrait1 None>>
+<<enableBox BathDoor>>
+===

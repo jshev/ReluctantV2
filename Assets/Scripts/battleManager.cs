@@ -137,17 +137,17 @@ public class battleManager : MonoBehaviour
     {
     	if (user == null)
     	{
-    		ui.updateText("Choose your Attack");
+    		ui.updateText("Choose Your Attack");
     	}
     	else if (attack.name != "skip") {
-    		ui.updateText(user.name + " used " + attack.name + " and " + attack.gameText);
+    		ui.updateText(user.name + " used " + attack.name + " and " + attack.gameText + ".");
     	}
     	else
     	{
     		if (user.stunned > 0)
     		{
     			user.stunned -=1;
-    			ui.updateText(user.name + " is exhausted and skipped this turn");
+    			ui.updateText(user.name + " is exhausted and skipped this turn.");
     		}
     		else 
     		{
@@ -188,12 +188,12 @@ public class battleManager : MonoBehaviour
 
     public void battleLoss()
     {
-    	sceneMng.SceneLoad();
+    	sceneMng.SceneLoadONE("LOSE");
     }
 
     public void battleWin()
     {
-    	sceneMng.SceneLoad();
+    	sceneMng.SceneLoadONE("WIN");
     }
 }
 
@@ -217,18 +217,18 @@ public class MoveList
 {
 	public Attack[] moveList = new Attack[] {
 		// Remember arrays start at 0
-		new Attack("scream", 5, 3, 1, "dealt 5 damage but is exhausted and must recharge.", "An attack that deals some damage and has a recharge time"),
-		new Attack("laugh", 5, 0, 0, "dealt 5 damage", "strait damage attack, weak"),
-		new Attack("eye beam", 20, 1, 2, "began charging an attack", "a powerful move with a large wind up"),
-		new Attack("isolate", 0, 2, 1, "will be protected this turn", "defensive move that will protect you for this round"),
-		new Attack("lash out", 10, 4, 5, "dealt 10 damage but also recieved 5", "a hard hitting move that has recoil"),
-		new Attack("rest", 0, 5, 15, "recovered 15 health", "rest, heal"),
+		new Attack("Scream", 5, 3, 1, "dealt 5 damage but is exhausted and must recharge", "An attack that deals some damage and has a recharge time."),
+		new Attack("Laugh", 5, 0, 0, "dealt 5 damage", "Straight, but somewhat weak damage attack."),
+		new Attack("Eye Beam", 20, 1, 2, "began charging an attack", "A powerful move with a large wind up."),
+		new Attack("Isolate", 0, 2, 1, "will be protected this turn", "A defensive move that will protect you for this round."),
+		new Attack("Lash Out", 10, 4, 5, "dealt 10 damage but also received 5", "A hard-hitting move that has some recoil."),
+		new Attack("Rest", 0, 5, 15, "recovered 15 health", "Rest to heal."),
 		// ^^^5^^^
-		new Attack("skip", 0, 0, 0, "is charging", "if you are reading this I am a bad programmer"),
-		new Attack("focus", 0, 7, 25, "will attack harder", "focus your thoughts and strike harder"),
-		new Attack("breathe", 0, 8, 25, "steeled their will", "steel your will against the enemy and take less damage"),
-		new Attack("dissuade", 5, 9, 25, "decreased the demon's attack", "reason with your fears, make them less dangerous"),
-		new Attack("strike fear", 3, 10, 25, "made Andrew more vulnerable", "make them worried and less defensive")
+		new Attack("Skip", 0, 0, 0, "is charging", "if you are reading this I am a bad programmer"),
+		new Attack("Focus", 0, 7, 25, "will attack harder", "Focus your thoughts and strike harder."),
+		new Attack("Breathe", 0, 8, 25, "steeled their will", "Steel your will against the enemy and take less damage."),
+		new Attack("Dissuade", 5, 9, 25, "decreased the demon's attack", "Reason with your fears to make them less dangerous."),
+		new Attack("Strike Fear", 3, 10, 25, "made Andrew more vulnerable", "Make them worried and less defensive.")
 		// ^^^10^^^
 	};
 

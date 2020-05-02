@@ -1,0 +1,46 @@
+title: Class
+tags: 
+colorID: 0
+position: 388,220
+---
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Professor>> 
+
+. . .
+. . .
+. . .
+
+<b>PROFESSOR:</b> We'll stop here for today. Remember to read the first chapter in your textbook for Wednesday's class! Have a good day!
+
+. . .
+
+<b>PROFESSOR:</b> Andrew, can I talk to you for a moment?
+
+[[Say yes.|TalkToPW]]
+
+[[Say no.|TalkToPWNo]]
+===
+title: TalkToPW
+tags: 
+colorID: 0
+position: 219,454
+---
+<b>ANDREW:</b> Oh, sure.
+
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>> 
+<<enableBox ProfessorDesk>>
+===
+title: TalkToPWNo
+tags: 
+colorID: 0
+position: 510,458
+---
+<b>ANDREW:</b> Oh, I'm sorry I need to go to another class.
+<b>PROFESSOR:</b> Oh, okay. I'll just send you an email instead.
+<b>ANDREW:</b> Okay, thank you.
+
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>> 
+<<enableBox Door>>
+===
