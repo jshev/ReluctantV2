@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: b419f403dc1e24c94ba63aa138c23fb5
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - LossText-Loser-0
+  - LossText-Loser-1
+  - LossText-Loser-2
+  - LossText-Loser-3
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

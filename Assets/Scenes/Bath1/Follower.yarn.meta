@@ -1,0 +1,80 @@
+fileFormatVersion: 2
+guid: cddfa35bb209a4387b2aebccf5454ab7
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - Follower-Start-0
+  - Follower-Start-1
+  - Follower-Start-2
+  - Follower-Start-3
+  - Follower-Start-4
+  - Follower-HelloFollower-5
+  - Follower-HelloFollower-6
+  - Follower-HelloFollower-7
+  - Follower-HelloFollower-8
+  - Follower-HelloFollower-9
+  - Follower-HelloFollower-10
+  - Follower-IgnoreFollower-11
+  - Follower-IgnoreFollower-12
+  - Follower-IgnoreFollower-13
+  - Follower-AskFMeaning-14
+  - Follower-AskFMeaning-15
+  - Follower-AskFMeaning-16
+  - Follower-AskFMeaning-17
+  - Follower-AskFMeaning-18
+  - Follower-AskFMeaning-19
+  - Follower-AskFMeaning-20
+  - Follower-AskFMeaning-21
+  - Follower-TryToLeaveF-22
+  - Follower-TryToLeaveF-23
+  - Follower-TryToLeaveF-24
+  - Follower-TryToLeaveF-25
+  - Follower-TryToLeaveF-26
+  - Follower-TryToLeaveF-27
+  - Follower-TryToLeaveF-28
+  - Follower-WhatFollowerWants-29
+  - Follower-WhatFollowerWants-30
+  - Follower-WhatFollowerWants-31
+  - Follower-WhatFollowerWants-32
+  - Follower-WhatFollowerWants-33
+  - Follower-WhatFollowerWants-34
+  - Follower-YesClarityF-35
+  - Follower-YesClarityF-36
+  - Follower-YesClarityF-37
+  - Follower-YesClarityF-38
+  - Follower-YesClarityF-39
+  - Follower-NoClarityF-40
+  - Follower-NoClarityF-41
+  - Follower-NoClarityF-42
+  - Follower-NoClarityF-43
+  - Follower-NoClarityF-44
+  - Follower-NoClarityF-45
+  - Follower-WhyFollowStay-46
+  - Follower-WhyFollowStay-47
+  - Follower-WhyFollowStay-48
+  - Follower-WhyFollowStay-49
+  - Follower-WhyFollowStay-50
+  - Follower-WhyFollowStay-51
+  - Follower-NoSeriousFollow-52
+  - Follower-NoSeriousFollow-53
+  - Follower-NoSeriousFollow-54
+  - Follower-AskWhatFollowerAre-55
+  - Follower-AskWhatFollowerAre-56
+  - Follower-AskWhatFollowerAre-57
+  - Follower-AskWhatFollowerAre-58
+  - Follower-AskWhatFollowerAre-59
+  - Follower-AskWhatFollowerAre-60
+  - Follower-AskWhatFollowerAre-61
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: cddfa35bb209a4387b2aebccf5454ab7,
+    type: 3}
+  localizations: []

@@ -1,0 +1,711 @@
+title: NoBreakfast
+tags:
+colorID: 0
+position: -116,213
+---
+<<setsprite Portrait1 Andrew>>
+. . .
+[[Text Sabrina.|SabrinaBA]]
+[[Text Botan.|BotanNoApology]]
+===
+title: ApologizeNoBreakfast
+tags:
+colorID: 0
+position: 330,219
+---
+<<setsprite Portrait1 Andrew>>
+. . .
+[[Text Botan.|BotanText]]
+[[Text Sabrina.|SabrinaTexting]]
+===
+title: Breakfast
+tags:
+colorID: 0
+position: 596,214
+---
+<<setsprite Portrait1 Andrew>>
+. . .
+[[Text Botan.|BotanDreamTalking]]
+[[Text Sabrina.|SabrinaTexting]]
+===
+title: SabrinaBA
+tags:
+colorID: 0
+position: -246,494
+---
+<b>ANDREW:</b> Hey, can we talk?
+<b>SABRINA:</b> I'm in class. Can't talk
+
+<<if $DEPRESSION < 80>>
+[[Insist on talking now.|TalkingNowS]]
+<<else>>
+[[Ask what's wrong.|WhatWrongS]]
+<<endif>>
+===
+title: BotanNoApology
+tags:
+colorID: 0
+position: -8,495
+---
+<b>ANDREW:</b> Hey, can we talk?
+<b>BOTAN:</b> Busy
+<b>BOTAN:</b> Cant talk
+
+<<if $ANXIETY < 80>>
+[[Ask about this morning.|MorningHappenB]]
+<<else>>
+[[Reply with annoyance.|GettingAnnoyed]]
+<<endif>>
+===
+title: BotanText
+tags:
+colorID: 0
+position: 222,480
+---
+<b>ANDREW:</b> Hey, can we talk?
+<b>BOTAN:</b> Sure, whats up?
+
+[[Open up.|OpenUpToB]]
+===
+title: SabrinaTexting
+tags:
+colorID: 0
+position: 462,491
+---
+<b>ANDREW:</b> Hey, can we talk?
+<b>SABRINA:</b> I'm in class
+<b>ANDREW:</b> I know, but I'm really stressed
+<b>SABRINA:</b> Can we meet up later?
+
+<<if $DEPRESSION < 80>>
+[[Say yes.|YesTextLaterS]]
+<<else>>
+[[Say no.|NoTextLaterS]]
+<<endif>>
+===
+title: BotanDreamTalking
+tags:
+colorID: 0
+position: 826,491
+---
+<b>ANDREW:</b> Something weird just happened
+<b>BOTAN:</b> Whats up?
+<b>ANDREW:</b> I was in class and I saw someone all in black. They talked to me and said some weird shit. I'm in the bathroom now, I'm freaking out
+<b>BOTAN:</b> Holy shit
+<b>BOTAN:</b> You didnt fall asleep?
+<b>ANDREW:</b> No! I just blinked and someone was there!
+<b>BOTAN:</b> This is getting weird
+<b>BOTAN:</b> Can you meet up?
+
+[[Say no.|NoSkipforBD]]
+===
+title: NoSkipforBD
+tags:
+colorID: 0
+position: 830,712
+---
+<b>ANDREW:</b> Not now, I have class
+<b>BOTAN:</b> You're gonna stay in class when something like this happens?
+<b>ANDREW:</b> It was probably my imagination, I am still tired
+<b>BOTAN:</b> Dude
+<b>BOTAN:</b> You cant be serious
+<b>BOTAN:</b> Somethings going on
+<b>BOTAN:</b> And im pretty sure its more important than school
+
+[[Stay in class.|DontSkipforBM2]]
+===
+title: MorningHappenB
+tags:
+colorID: 0
+position: -176,806
+---
+<b>ANDREW:</b>I guess you're still upset about this morning..
+
+<b>BOTAN:</b> How did you know?
+
+<b>BOTAN:</b> Not like we had an argument ten minutes ago
+
+<<if $ANXIETY < 80>>
+[[Apologize.|ApologizetoBMorning]]
+<<else>>
+[[Get defensive.|DefensiveAgainstBM]]
+<<endif>>
+===
+title: GettingAnnoyed
+tags:
+colorID: 0
+position: 39,804
+---
+<b>ANDREW:</b> Great, thanks
+<b>BOTAN:</b> What?
+<b>ANDREW:</b> I need help and you don't even bother
+<b>BOTAN:</b> Are you serious right now?
+<b>BOTAN:</b> You only want to talk to me now because you need help
+<b>BOTAN:</b> Not to apologize for all the shit that's happened this morning
+<b>BOTAN:</b> Thats a shitty move
+<b>BOTAN:</b> And you know it
+
+<<if $ANXIETY < 80>>
+[[Apologize.|ApologizetoBMorning]]
+<<else>>
+[[Get defensive.|DefendAgainstB2]]
+<<endif>>
+===
+title: ApologizetoBMorning
+tags:
+colorID: 0
+position: -36,1105
+---
+<b>ANDREW:</b> I'm sorry about what happened
+<b>BOTAN:</b> Sorry about what exactly?
+<b>BOTAN:</b> Avoiding me?
+<b>BOTAN:</b> Or skipping breakfast?
+<b>ANDREW:</b> Both
+<b>BOTAN:</b> Why didnt you want to talk to me?
+
+<<if $ANXIETY < 80>>
+[[Be honest.|HonestBM]]
+<<else>>
+[[Try to be honest.|TryHonestBM]]
+<<endif>>
+===
+title: DefensiveAgainstBM
+tags:
+colorID: 0
+position: -279,1124
+---
+<b>ANDREW:</b> Why are you being so rude?
+<b>BOTAN:</b> Im the one being rude?
+<b>BOTAN:</b> Werent you the one who avoided me?
+<b>ANDREW:</b> Yes, but I didn't mean to hurt your feelings
+<b>BOTAN:</b> Well it did
+<b>BOTAN:</b> Even if i hadnt seen you
+<b>BOTAN:</b> Its still a shitty thing to do
+<b>BOTAN:</b> And you know it
+
+<<if $ANXIETY < 80>>
+[[Apologize.|ApologizeBM]]
+<<else>>
+[[Defend yourself.|LoseBF]]
+<<endif>>
+===
+title: DefendAgainstB2
+tags:
+colorID: 0
+position: 944,1896
+---
+<b>ANDREW:</b> You don't understand
+<b>BOTAN:</b> I dont?
+<b>BOTAN:</b> Because i do understand you didnt want to talk to me
+<b>BOTAN:</b> And you didnt want to see us for breakfast
+<b>BOTAN:</b> Actions speak louder than anything you could say to defend yourself
+<b>ANDREW:</b> Botan, it's not that easy for me
+. . .
+. . .
+. . .
+<b>ANDREW:</b> ...
+
+<<set $ANXIETY to $ANXIETY + 15>>
+<<set $DEPRESSION to $DEPRESSION + 15>>
+<<set $BFRIENDSHIP to $BFRIENDSHIP - 3>>
+
+<<blockExit Bouncer>>
+<<setsprite Portrait1 None>>
+===
+title: HonestBM
+tags:
+colorID: 0
+position: -387,1884
+---
+<b>ANDREW:</b> I got worried you would be upset with me. I know I screwed up and I was scared of your reaction
+<b>BOTAN:</b> Dude, you shouldnt be scared of me
+<b>BOTAN:</b> I know i can be a dick sometimes
+<b>BOTAN:</b> But you shouldnt be scared to talk to me
+<b>ANDREW:</b> I know, I just got worked up
+<b>BOTAN:</b> You were overthinking shit
+<b>ANDREW:</b> Yeah, pretty much
+<b>BOTAN:</b> I know its not easy to say "stop overthinking"
+<b>BOTAN:</b> But you should feel comfortable talking to me about stuff like that
+<b>BOTAN:</b> Im sorry i flipped out on you
+<b>BOTAN:</b> In the moment i was really pissed
+<b>BOTAN:</b> And i didnt think things through
+<b>ANDREW:</b> I understand
+<b>BOTAN:</b> Why dont we meet up later?
+<b>ANDREW:</b> I'd really like that
+<b>BOTAN:</b> Cool
+<b>BOTAN:</b> Remember im here for you dude
+<b>ANDREW:</b> Thank you
+
+<<set $BFRIENDSHIP to $BFRIENDSHIP + 2>>
+<<set $ANXIETY to $ANXIETY - 10>>
+<<set $DEPRESSION to $DEPRESSION - 10>>
+
+<<blockExit Bouncer>>
+<<setsprite Portrait1 None>>
+===
+title: TryHonestBM
+tags:
+colorID: 0
+position: -165,1887
+---
+<b>ANDREW:</b> Well, because I knew you'd get mad and wouldn't understand
+<b>BOTAN:</b> Understand what?
+<b>BOTAN:</b> If somethings wrong you should talk to me about it
+<b>ANDREW:</b> I know, but sometimes it's hard to talk to you. I feel like sometimes you don't listen or you get erratic
+<b>BOTAN:</b> Okay and i have acknowledged that
+<b>BOTAN:</b> I know sometimes i get out of line
+<b>BOTAN:</b> But at least i apologize and try to make things right
+<b>BOTAN:</b> You just avoid it
+<b>ANDREW:</b> I don't do that!
+<b>BOTAN:</b> Really?
+<b>BOTAN:</b> Because now the conversation is about me
+<b>BOTAN:</b> And how im a dick
+<b>ANDREW:</b> That's not what I'm saying!
+<b>BOTAN:</b> Why did you bother texting me?
+<b>BOTAN:</b> You only want to talk to me when its convenient for you?
+<b>ANDREW:</b> That's not it! You're not listening to me!
+<b>BOTAN:</b> Actions speak louder than words
+<b>ANDREW:</b> Botan, I just want to talk
+
+. . .
+. . .
+. . .
+
+<b>ANDREW:</b> ...
+
+<<set $BFRIENDSHIP to $BFRIENDSHIP - 2>>
+<<set $ANXIETY to $ANXIETY + 10>>
+<<set $DEPRESSION to $DEPRESSION + 10>>
+
+<<blockExit Bouncer>>
+<<setsprite Portrait1 None>>
+===
+title: ApologizeBM
+tags:
+colorID: 0
+position: -45,1349
+---
+<b>ANDREW:</b> I'm sorry, I know I should have handled that a lot better
+<b>BOTAN:</b> So why didnt you want to talk?
+
+<<if $ANXIETY < 75>>
+[[Try to explain.|TryExplainingB]]
+<<else>>
+[[Refuse.|RefuseExplainB]]
+<<endif>>
+===
+title: LoseBF
+tags:
+colorID: 0
+position: 727,1909
+---
+<b>ANDREW:</b> You don't understand the whole story
+<b>BOTAN:</b> What the fuck are you talking about?
+<b>BOTAN:</b> You skipped out on breakfast
+<b>BOTAN:</b> Then tried to sneak past me
+<b>BOTAN:</b> Because school is soooooo important to you
+<b>BOTAN:</b> That you need to ditch your friends for it
+<b>ANDREW:</b> That's not it!
+<b>BOTAN:</b> Thats what it seems like
+<b>BOTAN:</b> Actions speak louder than words
+<b>ANDREW:</b> Botan, I'm not trying to be a dick about this. I'm sorry I hurt your feelings, but I didn't mean to!
+
+. . .
+. . .
+. . .
+
+<b>ANDREW:</b> ...
+
+<<set $BFRIENDSHIP to $BFRIENDSHIP - 2>>
+<<set $ANXIETY to $ANXIETY + 10>>
+<<set $DEPRESSION to $DEPRESSION + 10>>
+
+<<blockExit Bouncer>>
+<<setsprite Portrait1 None>>
+===
+title: TalkingNowS
+tags:
+colorID: 0
+position: -938,706
+---
+<b>ANDREW:</b> You really can't talk now?
+<b>SABRINA:</b> I'm in class. I'm surprised you're acting like this, I thought school was important?
+<b>ANDREW:</b> What are you talking about?
+<b>SABRINA:</b> You didn't want to see us before because you wanted to do school work. Now when you need something, you want to talk to us?
+<b>ANDREW:</b> That's different...
+<b>SABRINA:</b> No it's not
+
+<<if $ANXIETY < 75>>
+[[Apologize.|ApologySBA]]
+<<else>>
+[[Get defensive.|DefensiveSBA]]
+<<endif>>
+===
+title: WhatWrongS
+tags:
+colorID: 0
+position: -695,702
+---
+<b>ANDREW:</b> Is something wrong?
+<b>SABRINA:</b> Why do you care
+<b>ANDREW:</b> What does that mean?
+<b>SABRINA:</b> After this morning, it seems like all you care about is school
+
+<<if $ANXIETY < 75>>
+[[Apologize.|ApologySBA]]
+<<else>>
+[[Get defensive.|DefensiveSBA]]
+<<endif>>
+===
+title: ApologySBA
+tags:
+colorID: 0
+position: -945,942
+---
+<b>ANDREW:</b> I'm sorry about this morning, I know it wasn't fair to you. It's just hard to explain this
+<b>SABRINA:</b> Can you try?
+
+<<if $DEPRESSION < 75>>
+[[Try to explain.|TryExplainingS]]
+<<else>>
+[[Refuse.|RefuseExplainS]]
+<<endif>>
+===
+title: DefensiveSBA
+tags:
+colorID: 0
+position: -505,1453
+---
+<b>ANDREW:</b> You don't know what I'm going through
+<b>SABRINA:</b> That doesn't excuse it. You can't just decide when we're friends because it benefits you. That's selfish
+<b>ANDREW:</b> You sound like Botan
+<b>SABRINA:</b> Because I get why they're pissed
+<b>ANDREW:</b> Sabrina, please let me talk to you about this
+
+. . .
+. . .
+. . .
+
+<b>ANDREW:</b> ...
+
+<<set $SFRIENDSHIP to $SFRIENDSHIP - 2>>
+<<set $DEPRESSION to $DEPRESSION + 10>>
+<<set $ANXIETY to $ANXIETY + 10>>
+
+<<blockExit Bouncer>>
+<<setsprite Portrait1 None>>
+===
+title: RefuseExplainS
+tags:
+colorID: 0
+position: -1080,1221
+---
+<b>ANDREW:</b> I'm sorry, I don't know how to explain it
+<b>SABRINA:</b> I understand. I know it's hard to talk about stuff like that. Whenever you want to talk about that, let me know and I'll be there for you
+<b>ANDREW:</b> Thank you
+<b>SABRINA:</b> I think you should apologize to Botan too. You don't have to go into detail about this, but I know they'd appreciate hearing from you
+
+<<if $ANXIETY < 80>>
+[[Agree.|AgreeToApologyB]]
+<<else>>
+[[Ask Sabrina to do it.|AskSabrinaApologyB]]
+<<endif>>
+===
+title: TryExplainingS
+tags:
+colorID: 0
+position: -746,1453
+---
+<b>ANDREW:</b> Well, if I'm not on top of my work, I get anxious. If I don't work, I fall apart. It's something that helps me stay in control and gets my mind off things
+<b>SABRINA:</b> Oh, I didn't know that. You know, if you ever need to talk about that kind of stuff, I'm here for you okay?
+<b>ANDREW:</b> Yeah, thank you
+<b>SABRINA:</b> It's healthy to take a break sometimes. I know it's easier said than done, but it'll really help
+<b>ANDREW:</b> I just don't know what to do if I'm not working. I feel so overwhelmed if I don't do anything productive
+<b>SABRINA:</b> Well, just know you can talk to us and maybe we can try to do something. Why don't we do dinner tonight?
+<b>ANDREW:</b> That'd be really nice
+<b>SABRINA:</b> And it won't be too long, that way you can head to your dorm and relax
+<b>ANDREW:</b> Thank you, I appreciate the help
+<b>SABRINA:</b> No problem
+
+<<set $SFRIENDSHIP to $SFRIENDSHIP + 2>>
+<<set $ANXIETY to $ANXIETY - 10>>
+<<set $DEPRESSION to $DEPRESSION - 10>>
+
+<<blockExit Bouncer>>
+<<setsprite Portrait1 None>>
+===
+title: AgreeToApologyB
+tags:
+colorID: 0
+position: -983,1458
+---
+<b>ANDREW:</b> Yeah, I should do that. I'm sorry, it just makes me kinda anxious
+<b>SABRINA:</b> I understand, but why don't we meet up for dinner tonight? I'll be there so you don't have to do it alone
+<b>ANDREW:</b> That would be great, thank you
+<b>SABRINA:</b> No problem
+
+<<set $SFRIENDSHIP to $SFRIENDSHIP + 2>>
+<<set $ANXIETY to $ANXIETY - 10>>
+<<set $DEPRESSION to $DEPRESSION - 10>>
+
+<<blockExit Bouncer>>
+<<setsprite Portrait1 None>>
+===
+title: AskSabrinaApologyB
+tags:
+colorID: 0
+position: -1212,1458
+---
+<b>ANDREW:</b> Do you think you could talk to them for me?
+<b>SABRINA:</b> Andrew, you need to do this yourself
+<b>ANDREW:</b> But what if they don't want to talk to me?
+<b>SABRINA:</b> You can't just run away from this. You know you'll have to do it eventually
+<b>ANDREW:</b> I don't know
+<b>SABRINA:</b> Whatever, do what you want
+<b>ANDREW:</b> ...
+
+<<set $SFRIENDSHIP to $SFRIENDSHIP - 1>>
+<<set $ANXIETY to $ANXIETY + 10>>
+<<set $DEPRESSION to $DEPRESSION + 5>>
+
+<<blockExit Bouncer>>
+<<setsprite Portrait1 None>>
+===
+title: AgreePromiseB
+tags:
+colorID: 0
+position: 49,1897
+---
+<b>ANDREW:</b> I promise. It won't be easy, but I can at least try
+<b>BOTAN:</b> Thats all im asking
+<b>BOTAN:</b> Just know you can always talk to me about this stuff
+<b>BOTAN:</b> No matter what, im here for you
+<b>ANDREW:</b> Thank you
+<b>BOTAN:</b> Lets meet up later tonight
+<b>BOTAN:</b> Maybe we can all go out for dinner
+<b>ANDREW:</b> Yeah, I'd love to
+<b>BOTAN:</b> Awesome!
+<b>BOTAN:</b> Text me if you need anything okay?
+<b>ANDREW:</b> I will, thank you
+
+<<set $BFRIENDSHIP to $BFRIENDSHIP + 2>>
+<<set $ANXIETY to $ANXIETY - 10>>
+<<set $DEPRESSION to $DEPRESSION - 10>>
+
+<<blockExit Bouncer>>
+<<setsprite Portrait1 None>>
+===
+title: TryExplainingB
+tags:
+colorID: 0
+position: 506,1917
+---
+<b>ANDREW:</b> If I'm not on top of my work, I get anxious and I feel like I fall apart. Working helps my mind not think about shit and makes me feel in control
+<b>BOTAN:</b> I didnt know that
+<b>BOTAN:</b> Why didnt you tell me?
+<b>ANDREW:</b> I wasn't sure how to talk about it. It's something that's hard for me to talk about and I wasn't sure how to explain it
+<b>BOTAN:</b> Well
+<b>BOTAN:</b> Just know you dont have to go super in depth with that stuff
+<b>BOTAN:</b> Even if you just tell me youre not ok, im here for you
+<b>ANDREW:</b> Thank you. Are you still upset with me?
+<b>BOTAN:</b> Not anymore since i understand it
+<b>BOTAN:</b> I just wasnt aware of how that impacted you
+<b>BOTAN:</b> I cant get mad at you for that
+<b>ANDREW:</b> Thank yo, that means a lot to me
+<b>BOTAN:</b> No problem
+<b>BOTAN:</b> Why dont we meet up for dinner tonight?
+<b>ANDREW:</b> Sure, I'd like that
+<b>BOTAN:</b> Great!
+<b>BOTAN:</b> Let me know if you need anything ok?
+<b>ANDREW:</b> Okay, I will
+
+<<set $BFRIENDSHIP to $BFRIENDSHIP + 3>>
+<<set $ANXIETY to $ANXIETY - 15>>
+<<set $DEPRESSION to $DEPRESSION - 15>>
+
+<<blockExit Bouncer>>
+<<setsprite Portrait1 None>>
+===
+title: RefuseExplainB
+tags:
+colorID: 0
+position: -48,1583
+---
+<b>ANDREW:</b> I'm sorry, I don't know how to explain it
+<b>BOTAN:</b> Can you try?
+<b>BOTAN:</b> You dont need to go in depth
+<b>BOTAN:</b> But i want to know how youre feeling
+<b>ANDREW:</b> Well, anxious is a good way to describe it I guess
+<b>BOTAN:</b> I see
+<b>BOTAN:</b> Can you promise that youll be more open about this kind of stuff?
+<b>BOTAN:</b> Or at least try to tell me when somethings wrong?
+
+<<if $DEPRESSION < 75>>
+[[Promise.|AgreePromiseB]]
+<<else>>
+[[Uh...|BeUnsureB]]
+<<endif>>
+===
+title: BeUnsureB
+tags:
+colorID: 0
+position: 276,1910
+---
+<b>ANDREW:</b> I can't promise anything, it's difficult for me to talk about this
+<b>BOTAN:</b> Why does no one want to talk to me?
+<b>BOTAN:</b> Is something wrong with me?
+<b>ANDREW:</b> No! Why would you say that?
+<b>BOTAN:</b> Because it hurts knowing you cant talk to me about this
+<b>BOTAN:</b> It makes me think we arent as close as i think we are
+<b>ANDREW:</b> Botan, you're my best friend. It's just difficult for me to talk about my emotions
+<b>BOTAN:</b> I said you dont have to go in depth if you dont want to!
+<b>BOTAN:</b> Even if you just say you feel anxious or sad
+<b>BOTAN:</b> I can at least try to be there
+<b>BOTAN:</b> Im trying to respect this shit
+<b>BOTAN:</b> But i guess that doesnt matter
+<b>ANDREW:</b> I'm not trying to hurt you
+
+. . .
+. . .
+. . .
+
+<b>ANDREW:</b> ...
+
+<<set $BFRIENDSHIP to $BFRIENDSHIP - 2>>
+<<set $DEPRESSION to $DEPRESSION + 10>>
+<<set $ANXIETY to $ANXIETY + 10>>
+
+<<blockExit Bouncer>>
+<<setsprite Portrait1 None>>
+===
+title: DontSkipforBM2
+tags:
+colorID: 0
+position: 835,936
+---
+<b>ANDREW:</b> I'm sorry, I can't just skip the first day of class
+<b>BOTAN:</b> Seriously?
+<b>BOTAN:</b> Do you have any idea how important this is?
+<b>ANDREW:</b> We don't know if it means anything!
+<b>BOTAN:</b> This isnt normal
+<b>BOTAN:</b> Nothing like this has ever happened before
+<b>BOTAN:</b> And youre really going to play it off like its nothing?
+<b>ANDREW:</b> We have no idea if this means anything. I probably just spaced out
+<b>BOTAN:</b> You dont get it
+<b>BOTAN:</b> When shit hits the fan, dont come crying to me
+<b>ANDREW:</b> ...
+
+<<set $BFRIENDSHIP to $BFRIENDSHIP - 3>>
+<<set $DEPRESSION to $DEPRESSION + 10>>
+<<set $ANXIETY to $ANXIETY + 10>>
+
+<<blockExit Bouncer>>
+<<setsprite Portrait1 None>>
+===
+title: YesTextLaterS
+tags:
+colorID: 0
+position: 361,745
+---
+<b>ANDREW:</b> Yeah, I can do that
+<b>SABRINA:</b> We can meet up?
+<b>ANDREW:</b> That would be nice
+<b>SABRINA:</b> Okay. I'm sorry we can't talk now, but I'll try my best to help when I can
+<b>ANDREW:</b> Thank you, I'll see you later
+
+<<set $SFRIENDSHIP to $SFRIENDSHIP + 1>>
+<<set $ANXIETY to $ANXIETY - 5>>
+<<set $DEPRESSION to $DEPRESSION - 5>>
+
+<<blockExit Bouncer>>
+<<setsprite Portrait1 None>>
+===
+title: NoTextLaterS
+tags:
+colorID: 0
+position: 571,937
+---
+<b>ANDREW:</b> You can't text in class?
+<b>SABRINA:</b> Uh, no? I'm painting rn
+<b>ANDREW:</b> You can't spare a few minutes?
+<b>SABRINA:</b> I'm in class. You would be the same way
+<b>ANDREW:</b> No, I wouldn't do that!
+<b>SABRINA:</b> I know how important school is to you. Don't lie about it
+<b>ANDREW:</b> But this is different
+<b>SABRINA:</b> I'm not in the mood for this. Leave me alone
+<b>ANDREW:</b> Sabrina, please just talk to me
+
+. . .
+. . .
+. . .
+
+<b>ANDREW:</b> ...
+
+<<blockExit Bouncer>>
+<<setsprite Portrait1 None>>
+===
+title: OpenUpToB
+tags:
+colorID: 0
+position: 259,999
+---
+<b>ANDREW:</b> I was in class and something happened. I don't know how to explain it, but I'm kinda freaking out
+<b>BOTAN:</b> Maybe we should talk about this in person
+<b>BOTAN:</b> I know you dont like skipping school
+<b>BOTAN:</b> But you probably wont be able to focus if this is really bothering you
+
+[[Try meeting up later.|MeetingUpL]]
+===
+title: MeetingUpL
+tags:
+colorID: 0
+position: 263,1216
+---
+<b>ANDREW:</b> I'm sorry, but I should get back to class
+<b>BOTAN:</b> But youre upset
+<b>BOTAN:</b> How could we talk if youre in class?
+<b>ANDREW:</b> Maybe we can talk about it after class?
+<b>BOTAN:</b> What about texting me in class?
+
+<<if $ANXIETY < 75>>
+[[Agree.|AgreeToTextB]]
+<<else>>
+[[Disagree.|NoTextB]]
+<<endif>>
+===
+title: NoTextB
+tags:
+colorID: 0
+position: 209,1442
+---
+<b>ANDREW:</b> I don't think I should text during class
+<b>BOTAN:</b> Does that really matter now?
+<b>BOTAN:</b> You should be more worried about how you feel
+<b>ANDREW:</b> I don't want to get in trouble
+
+. . .
+
+<b>ANDREW:</b> ...
+
+<<set $BFRIENDSHIP to $BFRIENDSHIP - 2>>
+<<set $ANXIETY to $ANXIETY + 20>>
+<<set $DEPRESSION to $DEPRESSION + 10>>
+
+<<blockExit Bouncer>>
+<<setsprite Portrait1 None>>
+===
+title: AgreeToTextB
+tags:
+colorID: 0
+position: 481,1447
+---
+<b>ANDREW:</b> Yeah, I can do that. I just need a few minutes to calm down
+<b>BOTAN:</b> Okay
+<b>BOTAN:</b> Text me when youre ready, okay?
+<b>ANDREW:</b> I will, thank you
+
+<<set $BFRIENDSHIP to $BFRIENDSHIP + 1>>
+
+<<blockExit Bouncer>>
+<<setsprite Portrait1 None>>
+===

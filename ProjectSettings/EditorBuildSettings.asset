@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 8a2f39effd182452ab6d93470dc8c4c6
   - enabled: 1
@@ -32,10 +32,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cafe1/Cafe1.unity
     guid: e199c4182c9fa4d639dc0fa887a2facb
+  - enabled: 1
+    path: Assets/Scenes/SchoolHall/SchoolHall1.unity
+    guid: 5d264b5b8e2ba4dae8184301dec7c63d
+  - enabled: 1
+    path: Assets/Scenes/Class1/Class1.unity
+    guid: d296b4bbc29bf4d45b28c75cd2cc570c
+  - enabled: 1
+    path: Assets/Scenes/Bath1/Bath1.unity
+    guid: 676bfe18d72c9433d911bc30a60bc090
+  - enabled: 1
+    path: Assets/Scenes/Class2/Class2.unity
+    guid: 13df35d241ed14784b8775513c850be7
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Battle.unity
     guid: dceb849bbe7588447b647b8f2b428c5c
+  - enabled: 1
+    path: Assets/Scenes/LOSE/LOSE.unity
+    guid: ce34a4b98fec54f5b99546f9ebf0038f
+  - enabled: 1
+    path: Assets/Scenes/WIN/WIN.unity
+    guid: 5c6bd7bcad3d64642817883af62dd933
   m_configObjects: {}

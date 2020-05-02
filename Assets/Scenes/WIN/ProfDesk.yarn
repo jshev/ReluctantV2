@@ -1,0 +1,51 @@
+title: Troubles
+tags: 
+colorID: 0
+position: 389,221
+---
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Professor>> 
+
+<b>PROFESSOR:</b> I know it's only the first day, but something seems to be bothering you.
+
+[[Lie.|LietoPac]]
+
+[[Be honest.|HonesttoP]]
+===
+title: LietoPac
+tags: 
+colorID: 0
+position: 229,451
+---
+<b>ANDREW:</b> Thank you for your concern, but I'm okay.
+<b>PROFESSOR:</b> Are you sure? If something's bothering you, I want you to tell me. Maybe I could help.
+<b>ANDREW:</b> I-I appreciate it, but I'm okay. Thank you.
+<b>PROFESSOR:</b> ...
+<b>PROFESSOR:</b> Alright, please email me if you have any troubles.
+<b>ANDREW:</b> I will, thank you.
+
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Professor>> 
+<<enableBox Door>>
+===
+title: HonesttoP
+tags: 
+colorID: 0
+position: 494,448
+---
+<b>ANDREW:</b> I'm sorry, I guess I'm just having some anxiety with the new semester.
+<b>PROFESSOR:</b> Oh, I see. Do you have someone to talk to?
+<b>ANDREW:</b> Well, I have my friends. And my parents let me talk to them about this stuff too.
+<b>PROFESSOR:</b> That's good. Do you know about our mental health program?
+<b>ANDREW:</b> Huh?
+<b>PROFESSOR:</b> At the health center, the school is able to provide therapists for counseling. They take care of a variety of topics such as anxiety and depression in school. There are also some mental health resources if you don't feel comfortable going to therapy.
+<b>ANDREW:</b> Oh, I see.
+<b>PROFESSOR:</b> I can email their info to you if you want to contact them or visit their office, okay?
+<b>ANDREW:</b> Yeah, that'd be great.
+<b>PROFESSOR:</b> Great! And please email me if you have any troubles or concerns.
+<b>ANDREW:</b> I will, thank you.
+
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Professor>> 
+<<enableBox Door>>
+===

@@ -1,0 +1,16 @@
+title: BathroomGuy
+tags:
+colorID: 0
+position: 389,221
+---
+<<setsprite Portrait1 Andrew>>
+<b>NPC:</b> Uh, are you okay?
+<b>ANDREW:</b> Did you see a guy wearing all black?
+<b>NPC:</b> Uh, no. Can you move please?
+<b>ANDREW:</b> ...Y-yeah, sorry.
+
+. . .
+
+<b>ANDREW:</b> Just my imagination, I'm okay...
+<<setsprite Portrait1 None>>
+===

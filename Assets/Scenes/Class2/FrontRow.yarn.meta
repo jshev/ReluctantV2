@@ -1,0 +1,36 @@
+fileFormatVersion: 2
+guid: 01c244611afaa40af8bdca18df4d18b3
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - FrontRow-FrontOfClass-0
+  - FrontRow-FrontOfClass-1
+  - FrontRow-FrontOfClass-2
+  - FrontRow-FrontOfClass-3
+  - FrontRow-FrontOfClass-4
+  - FrontRow-FrontOfClass-5
+  - FrontRow-FrontOfClass-6
+  - FrontRow-FrontOfClass-7
+  - FrontRow-FrontOfClass-8
+  - FrontRow-FrontOfClass-9
+  - FrontRow-FrontOfClass-10
+  - FrontRow-FrontOfClass-11
+  - FrontRow-FrontOfClass-12
+  - FrontRow-FrontOfClass-13
+  - FrontRow-FrontOfClass-14
+  - FrontRow-MonsterRevealinClass-15
+  - FrontRow-MonsterRevealinClass-16
+  - FrontRow-MonsterRevealinClass-17
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 01c244611afaa40af8bdca18df4d18b3,
+    type: 3}
+  localizations: []

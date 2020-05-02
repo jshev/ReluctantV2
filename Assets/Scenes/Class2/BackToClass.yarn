@@ -1,0 +1,29 @@
+title: BackToClass
+tags:
+colorID: 0
+position: 379,447
+---
+
+<<setsprite Portrait1 Andrew>>
+<<setsprite Portrait2 Professor>>
+<b>PROFESSOR:</b> Oh! There you are, Andrew.
+<b>ANDREW:</b> Sorry, I didn't mean to be so long.
+<b>PROFESSOR:</b> No worries. Please take your seat. We were just about to start ice breakers. Why don't you start them, Andrew?
+
+[[Agree.|AgreetoIceBreakinC]]
+===
+title: AgreetoIceBreakinC
+tags:
+colorID: 0
+position: 381,671
+---
+<b>ANDREW:</b> Uh, sure. My name is-
+<b>PROFESSOR:</b> I'm sorry Andrew, can you speak up?
+<b>ANDREW:</b> S-sure. My name is Andr-
+<b>NPC:</b> I still can't hear you!
+<b>PROFESSOR:</b> Why don't you come to the front of the class, Andrew?
+
+<<enableBox Imposter>>
+<<setsprite Portrait1 None>>
+<<setsprite Portrait2 None>>
+===

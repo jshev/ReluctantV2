@@ -6,9 +6,10 @@ using Yarn.Unity.Example;
 
 public class PlayerMove : MonoBehaviour
 {
-	float VelX, VelY, MaxX, MaxY;
+	public float VelX, VelY, MaxX, MaxY;
 	public GameObject nonPlayable;
-	public bool pause = false;
+	public bool pause = false, stopped = false;
+    public Animator animator;
 
     void Update()
     {
@@ -36,6 +37,11 @@ public class PlayerMove : MonoBehaviour
 	        	VelY -=5;
 	        }
 	    }
+        animator.SetFloat("VelX", VelX);
+        animator.SetFloat("VelY", VelY);
+
+        stopped = (VelX == 0 && VelY == 0) ? true : false;
+        animator.SetBool("Stopped", stopped);
 
         GetComponent<Rigidbody2D> ().velocity = new Vector2 (VelX, VelY);
     }
@@ -51,6 +57,7 @@ public class PlayerMove : MonoBehaviour
     {
     	if (col.gameObject.GetComponent<NPC>() != null) {
     		GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
+            animator.SetBool("Stopped", true);
     		CheckForNearbyNPC (col.gameObject);
 			if (col.gameObject.tag == "Object") {
 				col.gameObject.SetActive(false);

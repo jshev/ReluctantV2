@@ -1,0 +1,15 @@
+title: Loser
+tags: 
+colorID: 0
+position: 390,222
+---
+<<setsprite Portrait1 Andrew>>
+
+<b>ANDREW:</b> Ah...hng...
+<b>DEMON:</b> Aha, I knew you couldn't fight back. What a weak little boy. No wonder you're alone.
+<b>ANDREW:</b> N-no I'm not!
+<b>DEMON:</b> Hm, this won't be the last time you see me. Maybe next time you can actually fight back.
+
+<<setsprite Portrait1 None>>
+<<fade LevelChanger Menu>>
+===
