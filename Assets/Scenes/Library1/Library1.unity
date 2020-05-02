@@ -345,6 +345,7 @@ GameObject:
   - component: {fileID: 516253837}
   - component: {fileID: 516253838}
   - component: {fileID: 516253839}
+  - component: {fileID: 516253840}
   m_Layer: 0
   m_Name: Andrew
   m_TagString: Untagged
@@ -458,8 +459,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f63c6c7b171e7b49a016ee25aef3c78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VelX: 0
+  VelY: 0
+  MaxX: 0
+  MaxY: 0
   nonPlayable: {fileID: 0}
   pause: 0
+  stopped: 0
+  animator: {fileID: 516253840}
 --- !u!50 &516253838
 Rigidbody2D:
   serializedVersion: 4
@@ -496,6 +503,25 @@ MonoBehaviour:
   characterName: ANDREW
   talkToNode: 
   scriptToLoad: {fileID: 0}
+--- !u!95 &516253840
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516253833}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 24892a47b86a2d047b741197bb14c157, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &565956662
 GameObject:
   m_ObjectHideFlags: 0
