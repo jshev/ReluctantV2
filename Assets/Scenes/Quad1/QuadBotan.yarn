@@ -83,6 +83,7 @@ position: 464,944
 <b>ANDREW:</b> She said she's on her way. We should grab a table.
 <b>BOTAN:</b> Sounds good!
 
+<<fade LevelChanger Cafe1>>
 <<setsprite Portrait1 None>>
 <<setsprite Portrait2 None>>
 ===
